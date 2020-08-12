@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      to left,
+      rgb(255, 215, 0, 0.5),
+      rgb(255, 165, 0, 0.5)
+    ),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: #222;
+}
+
+footer {
+  position: absolute;
+  bottom: 25px;
+  font-size: 0.8rem;
+}
+
+#text {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.img {
+  border-radius: 3px;
+  max-width: 50%;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  text-transform: uppercase;
+}
+
+.img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  background: linear-gradient(rgb(255, 165, 0), rgb(255, 215, 0));
+  width: 900px;
+  max-width: 80%;
+  padding: 50px 20px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.btn {
+  background: linear-gradient(to left, rgba(210, 25, 522), rgba(123, 32, 58));
+  color: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(to left, rgba(200, 15, 512), rgba(113, 22, 48));
+  border: 1px solid gold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
