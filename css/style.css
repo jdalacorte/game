@@ -20,7 +20,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 100vw;
   height: 100vh;
   color: #222;
@@ -34,16 +33,12 @@ footer {
 
 #text {
   margin-top: 10px;
-  text-align: justify;
+  text-align: center;
 }
 
 .img {
   border-radius: 3px;
   max-width: 50%;
-}
-
-.title {
-  text-align: center;
 }
 
 .title h1 {
@@ -62,6 +57,7 @@ footer {
   border-radius: 5px;
   border: 1px solid orange;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .btn-grid {
