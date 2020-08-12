@@ -43,12 +43,13 @@ function selectOption(option) {
 
 // story
 const textNodes = [
-  // scene start
+  // scene start - HOME
   {
     id: 0,
     text:
       '<div class="title"><h1>Space Muamba 2053</h1><p>Criado por Jonas Dalacorte & Daniel Hogrefe</p></div>',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+    img:
+      '<img class="img" src="https://i.imgur.com/PEPcYaw.gif" alt="test-img" />',
     options: [
       {
         text: 'Começar',
@@ -61,11 +62,12 @@ const textNodes = [
     ],
   },
   // scene end
-  // scene start
+
+  // scene start -
   {
     id: 420,
     text:
-      '<div class="title"><h1>Space Muamba 2053</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quod, voluptate inventore fuga id sequi nulla eum neque voluptas, incidunt praesentium enim, unde dolore rem suscipit! Vero obcaecati enim earum alias minima adipisci ipsam facere, suscipit nulla numquam iste ab, nesciunt quasi sunt! Doloremque quaerat alias inventore sit omnis sed!</p></div>',
+      '<h1>Space Muamba 2053</h1><p class="credits">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quod, voluptate inventore fuga id sequi nulla eum neque voluptas, incidunt praesentium enim, unde dolore rem suscipit! Vero obcaecati enim earum alias minima adipisci ipsam facere, suscipit nulla numquam iste ab, nesciunt quasi sunt! Doloremque quaerat alias inventore sit omnis sed!</p>',
     img: '',
     options: [
       {
@@ -79,8 +81,9 @@ const textNodes = [
   {
     id: 1,
     text:
-      'Você acorda no banheiro de um bar de fim de noite no limiar da Galáxia sem nenhum pertence. Apenas um frasco cheio até a metade com um Pó Roxo ao lado da latrina.',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+      'Você acorda no banheiro de um bar de fim de noite no limiar da Galáxia sem nenhum pertence. Apenas um frasco cheio até a metade com um <span class="highlight">Pó Roxo</span> ao lado da latrina.',
+    img:
+      '<img class="img" src="https://media1.giphy.com/media/QrJSFW6R6wqKQ/giphy.gif" alt="test-img" />',
     options: [
       {
         text: 'Pegar o frasco e sair do banheiro',
@@ -97,7 +100,8 @@ const textNodes = [
     id: 2,
     text:
       'No salão do bar você encontra o Alienígena Dono do Bar. Ele resmunga sobre a sua demora no banheiro e segue seus afazeres.',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+    img:
+      '<img class="img" src="https://media1.giphy.com/media/54u9PXmw1zU8U/giphy.gif" alt="test-img" />',
     options: [
       {
         text: 'Perguntar ao Alienígena Dono do Bar sobre o Pó Roxo',
@@ -118,7 +122,8 @@ const textNodes = [
     id: 3,
     text:
       'Ele responde que não se envolve em "papo de mercador" e segue seus afazeres atrás do balcão.',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+    img:
+      '<img class="img" src="https://media1.giphy.com/media/lrkdJMmrV4SiY/giphy.gif" alt="test-img" />',
     options: [
       {
         text: 'Perguntar sobre a noite passada',
@@ -134,7 +139,8 @@ const textNodes = [
     id: 4,
     text:
       'O Alienígena Dono do Bar fica possesso e manda você sair logo do seu bar.',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+    img:
+      '<img class="img" src="https://media2.giphy.com/media/yYU1SgRpBBcDm/giphy.gif" alt="test-img" />',
     options: [
       {
         text: 'Sair do bar',
@@ -146,7 +152,8 @@ const textNodes = [
     id: 5,
     text:
       'Quando você sai pela porta do bar se dá conta de que é tudo um sonho.',
-    img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
+    img:
+      '<img class="img" src="https://media0.giphy.com/media/74mQxYVTXSQAo/giphy.gif" alt="test-img" />',
     options: [
       {
         text: 'FIM',

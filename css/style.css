@@ -1,10 +1,13 @@
+/* setup */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
+/* elements */
 body {
   background: linear-gradient(
       to left,
@@ -33,15 +36,20 @@ footer {
   bottom: 10px;
 }
 
+/* ids */
 #text {
   margin-top: 10px;
   text-align: center;
 }
 
+/* classes */
 .img {
   margin: auto;
   border-radius: 3px;
-  max-width: 66%;
+  max-width: 768px;
+  max-height: 432px;
+  height: 100%;
+  width: 100%;
 }
 
 .img-head {
@@ -57,7 +65,7 @@ footer {
 }
 
 .container {
-  background: linear-gradient(rgb(255, 165, 0), rgb(255, 215, 0));
+  background: linear-gradient(rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3));
   width: 900px;
   max-width: 80%;
   padding: 10px;
@@ -89,6 +97,25 @@ footer {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.highlight {
+  font-weight: bold;
+  background: rgba(200, 15, 512);
+  color: #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.highlight:hover {
+  color: rgba(200, 15, 512);
+  background: #eee;
+  cursor: pointer;
+}
+
+.credits {
+  text-align: left;
+}
+
+/* queries */
 @media screen and (max-width: 768px) {
   .img {
     max-width: 100%;
