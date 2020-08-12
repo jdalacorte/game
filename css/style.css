@@ -23,12 +23,13 @@ body {
   width: 100vw;
   height: 100vh;
   color: #222;
+  position: relative;
 }
 
 footer {
-  position: absolute;
-  bottom: 25px;
+  position: fixed;
   font-size: 0.8rem;
+  bottom: 3px;
 }
 
 #text {
@@ -38,7 +39,7 @@ footer {
 
 .img {
   border-radius: 3px;
-  max-width: 50%;
+  max-width: 66%;
 }
 
 .title h1 {
@@ -53,7 +54,7 @@ footer {
   background: linear-gradient(rgb(255, 165, 0), rgb(255, 215, 0));
   width: 900px;
   max-width: 80%;
-  padding: 50px 20px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid orange;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -79,4 +80,10 @@ footer {
   background: linear-gradient(to left, rgba(200, 15, 512), rgba(113, 22, 48));
   border: 1px solid gold;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    max-width: 100%;
+  }
 }
