@@ -81,9 +81,10 @@ footer {
 
 .btn-grid {
   display: grid;
+  /* grid-template-columns: auto; */
   grid-template-columns: repeat(2, auto);
   gap: 5px;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
 .btn {
