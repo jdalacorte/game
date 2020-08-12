@@ -44,6 +44,9 @@ footer {
 
 /* classes */
 .img {
+  border: 10px solid transparent;
+  border-image: url(https://i.pinimg.com/originals/2a/91/eb/2a91ebdf918337b5254207bf94b212e7.gif)
+    30 round;
   margin: auto;
   border-radius: 3px;
   max-width: 768px;
@@ -117,6 +120,15 @@ footer {
 
 /* queries */
 @media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
   .img {
     max-width: 100%;
   }
