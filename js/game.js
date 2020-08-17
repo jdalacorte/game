@@ -252,6 +252,7 @@ const textNodes = [
     options: [
       {
         text: 'Ignorar as instruções e ir para casa curar a ressaca',
+        requiredState: (currentState) => currentState.instruction,
         setState: { msg: false, instruction: true },
         nextText: 10,
       },
@@ -261,6 +262,8 @@ const textNodes = [
       },
       {
         text: `Jogar o código e o nome da Dra. ${draName} na Rede de Computadores`,
+        requiredState: (currentState) => currentState.msg,
+        setState: { instruction: true },
         nextText: 11,
       },
     ],
@@ -279,6 +282,7 @@ const textNodes = [
       },
       {
         text: `Jogar o código e o nome da Dra. ${draName} na Rede de Computadores`,
+        setState: { msgIgnored: true },
         nextText: 11,
       },
       {
@@ -300,7 +304,13 @@ const textNodes = [
     options: [
       {
         text: `Seguir as Instruções e saltar para ${planetB}`,
+        requiredState: (currentState) => currentState.instruction,
         nextText: 12,
+      },
+      {
+        text: `Abrir sua caixa de mensagens`,
+        requiredState: (currentState) => currentState.msgIgnored,
+        nextText: 9,
       },
     ],
   },
