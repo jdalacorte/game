@@ -348,6 +348,7 @@ const textNodes = [
       },
       {
         text: 'Investigar a Névoa',
+        setState: { barB: true },
         nextText: 16,
       },
     ],
