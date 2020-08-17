@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script></script>
   </head>
 
   <body>
@@ -23,8 +25,35 @@
       </div>
     </div>
 
-    <footer>&copy; 2020 VSF Games</footer>
+    <div class="soundtrack">
+      <audio id="bgm" autoplay="autoplay" loop="loop">
+        <source src="./bgm/address_master.mp3" type="audio/mpeg" />
+      </audio>
 
+      <div
+        class="unmute"
+        onclick="document.getElementById('bgm').muted = !document.getElementById('bgm').muted;$(this).toggleClass('mute')"
+      ></div>
+    </div>
+
+    <footer><span class="var">&copy; 2020 VSF Games</span></footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./js/game.js"></script>
   </body>
 </html>
+<!-- 
+
+<div class="title">
+  <h1>Space Muamba 3020</h1></div>
+  <div class="credits">
+    <h3>Criação</h3>
+    <p>Daniel Hogrefe & Jonas Dalacorte</p>
+    <h3>Arte</h3>
+    <p>Daniel Hogrefe</p>
+    <h3>Mecanismo & Programação</h3>
+    <p>Jonas Dalacorte</p>
+    <h3>Trilha Original</h3>
+    <p>AEON & CRUISE NOIR</p>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn" target="_blank">bqlqn</a> from <a href="https://www.flaticon.com/ target="_blank" title="Flaticon">www.flaticon.com</a></div>
+  </div> -->
