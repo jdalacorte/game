@@ -194,7 +194,6 @@ const textNodes = [
       },
     ],
   },
-
   // cena 6
   {
     id: 6,
