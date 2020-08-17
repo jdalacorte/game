@@ -197,7 +197,7 @@ const textNodes = [
 
   // cena 6
   {
-    id: 3,
+    id: 6,
     text: `O Velho ${barman} ignora sua pergunta e segue olhando fixamente para A Substância. Um sentimento esmagador toma conta de seu peito. É hora de dar o fora.`,
     img: '<img class="img" src="./img/img.jpg" alt="test-img" />',
     options: [
