@@ -252,7 +252,6 @@ const textNodes = [
     options: [
       {
         text: 'Ignorar as instruções e ir para casa curar a ressaca',
-        requiredState: (currentState) => currentState.instruction,
         setState: { msg: false, instruction: true },
         nextText: 10,
       },
