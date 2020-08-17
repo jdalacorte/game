@@ -387,7 +387,7 @@ const textNodes = [
       {
         text: 'Voltar ao Bar e tentar conseguir mais informações sobre o local',
         requiredState: (currentState) => currentState.barB,
-        nextText: 15,
+        nextText: 17,
       },
       {
         text: 'Atacar a Figura Enigmática aproveitando o fator surpresa',
