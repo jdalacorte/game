@@ -5,28 +5,26 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
 }
 
 /* elements */
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
       to left,
       rgb(255, 215, 0, 0.5),
       rgb(255, 165, 0, 0.5)
     ),
-    url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
+    url(../img/bg.jpg), no-repeat, fixed, center;
+  background-size: cover; */
+  background: #222;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  color: #222;
+  color: #111;
 }
 
 footer {
@@ -45,35 +43,28 @@ footer {
 /* classes */
 .img {
   border: 10px solid transparent;
-  border-image: url(https://i.pinimg.com/originals/2a/91/eb/2a91ebdf918337b5254207bf94b212e7.gif)
-    30 round;
   margin: auto;
   border-radius: 3px;
   max-width: 768px;
   max-height: 432px;
-  height: 100%;
+  height: auto;
   width: 100%;
-}
-
-.img-head {
-  height: 420px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #ffe;
 }
 
 .title h1 {
   text-transform: uppercase;
 }
 
-.img:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
 .container {
-  background: linear-gradient(rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3));
+  /* background: linear-gradient(rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3)); */
+  background: #888;
   width: 900px;
   max-width: 80%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid orange;
+  border: 1px solid #111;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: auto;
@@ -81,38 +72,31 @@ footer {
 
 .btn-grid {
   display: grid;
-  /* grid-template-columns: auto; */
   grid-template-columns: repeat(2, auto);
   gap: 5px;
   margin: 20px auto 0;
 }
 
 .btn {
-  background: linear-gradient(to left, rgba(210, 25, 522), rgba(123, 32, 58));
-  color: white;
   border-radius: 5px;
-  border: 1px solid orange;
+  border: 1px solid #111;
   cursor: pointer;
+  padding: 3px;
 }
 
 .btn:hover {
-  background: linear-gradient(to left, rgba(200, 15, 512), rgba(113, 22, 48));
-  border: 1px solid gold;
+  border: 1px solid #111;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #111;
+  color: #eee;
 }
 
 .highlight {
   font-weight: bold;
-  background: rgba(200, 15, 512);
-  color: #eee;
-  padding: 2px;
-  border-radius: 3px;
-}
-
-.highlight:hover {
   color: rgba(200, 15, 512);
-  background: #eee;
-  cursor: pointer;
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid transparent;
 }
 
 .credits {
