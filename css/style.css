@@ -25,15 +25,38 @@ body {
 }
 
 footer {
+  right: 10px;
+}
+
+footer,
+.soundtrack {
   position: fixed;
   bottom: 10px;
-  right: 10px;
   font-size: 0.8rem;
   color: #111;
 }
 
-a {
+.line {
+  font-size: 0.8rem;
+}
+
+a,
+.var,
+i {
+  font-weight: bold;
   color: crimson;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+i {
+}
+
+i:hover {
+  color: #111;
+  cursor: pointer;
 }
 
 /* ids */
@@ -62,7 +85,7 @@ a {
 }
 
 .title h1 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #548484;
 }
 
@@ -108,20 +131,8 @@ a {
   line-height: 2;
 }
 
-a,
-.var {
-  font-weight: bold;
-  color: crimson;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 .soundtrack {
-  position: fixed;
   left: 10px;
-  bottom: 10px;
 }
 
 /* queries */

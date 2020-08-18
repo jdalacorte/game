@@ -72,8 +72,19 @@ const textNodes = [
   // HOME
   {
     id: 0,
-    text:
-      '<div class="title"><h1>Space Muamba 3020</h1><p>Criado por Daniel Hogrefe & Jonas Dalacorte</p></div>',
+    text: `
+    <div class="title">
+      <h1>
+        SPACE MUAMBA 3020<sub class="line">demo</sub>
+      </h1>
+      <p>
+        Medo e delírio no Limiar da Galáxia
+      </p>
+      <br>
+      <p class="line">
+        Criado por Daniel Hogrefe & Jonas Dalacorte
+      </p>
+    </div>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -102,7 +113,6 @@ const textNodes = [
     <p>Jonas Dalacorte</p>
     <h4>Trilha Original</h4>
     <p>AEON & CRUISE NOIR</p>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn" target="_blank">bqlqn</a> from <a href="https://www.flaticon.com/ target=" _blank" title="Flaticon">www.flaticon.com</a></div>
   </div >`,
     img: '',
     options: [
@@ -575,7 +585,7 @@ startGame();
 
 $(document).ready(function () {
   $('i').click(function () {
-    $('i').toggleClass('fas fa-play-circle fas fa-pause-circle');
+    $('i').toggleClass('fas fa-play-circle fa-2x fas fa-pause-circle fa-2x');
   });
 });
 
