@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 // 
+>>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
 const alien = '<span class="var">Kroptiliano</span>';
 const nomeDoBar = `<span class="var">Mondrian's</span>`;
 const liquidoRoxo = '<span class="var">Líquido Roxo</span>';
@@ -255,7 +258,11 @@ const textNodes = [
   },
   // no return
 
+<<<<<<< HEAD
+  // CENA 8 (ouvir / ignorar msg)
+=======
   // CENA 8
+>>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
   {
     id: 8,
     text: `O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu ${nomeDoCarro} está pronto para um Salto Sônico. O ícone de mensagem recebida no monitor chama sua atenção.`,
@@ -400,7 +407,7 @@ const textNodes = [
   // CENA 15
   {
     id: 15,
-    text: `A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com A Substância, sua entrada no bar é ignorada totalmente. Além da densa fumaça de cigarros, um tom arroxeado na fumaça chama sua a atenção pela semelhança com a cor d'A Substância.`,
+    text: `A mesma CENA em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa CENA de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com A Substância, sua entrada no bar é ignorada totalmente. Além da densa fumaça de cigarros, um tom arroxeado na fumaça chama sua a atenção pela semelhança com a cor d'A Substância.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -465,8 +472,13 @@ const textNodes = [
         nextText: 16,
       },
     ],
+<<<<<<< HEAD
+  },
+
+=======
   },(
   
+>>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
   // CENA 18 (transição)
   {
     id: 18,
@@ -550,6 +562,7 @@ const textNodes = [
       },
     ],
   },
+
   // BONUS
   {
     id: 69,
