@@ -1,17 +1,4 @@
-/* reusable bla
-
-// required state to show option
-requiredState: (currentState) => currentState.*state*,
-
-
-// has state
-setState: { *state*: true },
-
-
-// PROMPT USER NAME TO BEGIN ${userName}
-
-*/
-// names
+// 
 const alien = '<span class="var">Kroptiliano</span>';
 const nomeDoBar = `<span class="var">Mondrian's</span>`;
 const liquidoRoxo = '<span class="var">Líquido Roxo</span>';
@@ -25,17 +12,20 @@ const plantaLouca = '<span class="var"><em>Alternanthera Ficoidea</em></span>';
 const substanciaB = '<span class="var">B7-DHJD</span>';
 const bonusScene = '';
 
+const imageElement = document.getElementById('img');
 const textElement = document.getElementById('text');
 const optionButtonsElement = document.getElementById('option-buttons');
-const imageElement = document.getElementById('img');
 
 let state = {};
 
+// start at
 function startGame() {
   state = {};
   showTextNode(0);
 }
 
+
+// cena / img
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerHTML = textNode.text;
@@ -44,6 +34,7 @@ function showTextNode(textNodeIndex) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
 
+//
   textNode.options.forEach((option) => {
     if (showOption(option)) {
       const button = document.createElement('button');
@@ -55,10 +46,14 @@ function showTextNode(textNodeIndex) {
   });
 }
 
+
+// required state to show option
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state);
 }
 
+
+// 
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
@@ -68,7 +63,6 @@ function selectOption(option) {
   showTextNode(nextTextNodeId);
 }
 
-// story
 const textNodes = [
   // HOME
   {
@@ -100,7 +94,7 @@ const textNodes = [
     ],
   },
 
-  // CREDITOS
+  // CRÉDITOS
   {
     id: 420,
     text: `<div class="title">
@@ -124,7 +118,7 @@ const textNodes = [
     ],
   },
 
-  // cena 1
+  // CENA 1
   {
     id: 1,
     text: `<p>Você acorda no chão de uma das cabines no banheiro do ${nomeDoBar}, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um ${liquidoRoxo} que parece remédio para dor de barriga no seu bolso esquerdo. Apenas mais uma noite no ${nomeDoBar}.</p>`,
@@ -146,7 +140,7 @@ const textNodes = [
     ],
   },
 
-  // cena 2
+  // CENA 2
   {
     id: 2,
     text: `Além de um maço de cigarros úmidos e um cadáver de rato espacial, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra um papel rasgado pela metade que parece ser uma prescrição médica. É possível ler apenas "Dra. ${draName}" e o código "${codigoFrasco}" - essa mesma sequência está anotada no frasco do ${liquidoRoxo}.`,
@@ -161,7 +155,7 @@ const textNodes = [
     ],
   },
 
-  // cena 3
+  // CENA 3
   {
     id: 3,
     text: `Por baixo da porta de entrada é possível ver os primeiros raios do Segundo Sol indicando que você já perdeu a manhã toda. No balcão, o Velho ${barman} lhe observa com indiferença enquanto fecha um de seus cigarros fedorentos.`,
@@ -173,7 +167,7 @@ const textNodes = [
         nextText: 6,
       },
       {
-        text: `Perguntar sobre A Substância ${codigoFrasco}`,
+        text: `Perguntar o que ele sabe sobre A Substância ${codigoFrasco}`,
         nextText: 4,
         requiredState: (currentState) => currentState.papelCodigo,
       },
@@ -184,7 +178,7 @@ const textNodes = [
     ],
   },
 
-  // cena 4 transição
+  // CENA 4 (transição)
   {
     id: 4,
     text: `Uma das vantagens de ser um Local no ${nomeDoBar} é que você sabe que o Velho ${barman} antes de passar suas horas resmungando atrás do balcão empoeirado também foi um Trambiqueiro Espacial como você e pode ajudar a desvendar esse pequeno mistério ressaquento.`,
@@ -198,7 +192,7 @@ const textNodes = [
     ],
   },
 
-  // cena 5
+  // CENA 5
   {
     id: 5,
     text: `O Velho ${barman} explica que A Substância ${codigoFrasco} não é produzida há mais de 300 anos e que provavelmente esse frasco veio parar nesse buraco no Limiar da Galáxia por meio de Contrabando Sônico - uma forma de viagem no tempo. Suas propriedades são desconhecidas já que sua criadora, a Dra. ${draName} desapareceu logo após sua descoberta. Ele muda de feição instantaneamente e pede para ver A Substância mais de perto.`,
@@ -219,7 +213,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 6
+
+  // CENA 6
   {
     id: 6,
     text: `O Velho ${barman} ignora sua pergunta e segue olhando fixamente para A Substância. Um sentimento esmagador toma conta de seu peito. É hora de dar o fora.`,
@@ -233,15 +228,7 @@ const textNodes = [
     ],
   },
 
-  //
-
-  //
-
-  //
-
-  //
-
-  // cena 7
+  // CENA 7 (carro)
   {
     id: 7,
     text: `Sem seus óculos escuros você leva alguns segundos para conseguir adaptar a visão e achar seu ${nomeDoCarro} estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.`,
@@ -268,7 +255,7 @@ const textNodes = [
   },
   // no return
 
-  // cena 8
+  // CENA 8
   {
     id: 8,
     text: `O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu ${nomeDoCarro} está pronto para um Salto Sônico. O ícone de mensagem recebida no monitor chama sua atenção.`,
@@ -290,7 +277,7 @@ const textNodes = [
   },
   // no return
 
-  // cena 9 MENSAGEM
+  // CENA 9 (mensagem)
   {
     id: 9,
     text: `O rosto que aparece no telecomunicador não é familiar, você ouve atentamente a mensagem: A Dra. ${draName} se apresenta e avisa que você corre perigo e que forças sinistras estão atrás d'A Substância que pode alterar o curso da vida na Galáxia. Ela pede para que você salte imediatamente para ${planetB} e lhe passa as coordenadas.`,
@@ -314,7 +301,7 @@ const textNodes = [
     ],
   },
 
-  // cena 10 CASA
+  // CENA 10 (casa)
   {
     id: 10,
     text:
@@ -340,7 +327,7 @@ const textNodes = [
     ],
   },
 
-  // cena 11 GOOGLE
+  // CENA 11 (google)
   {
     id: 11,
     text: `Há cerca de 300 anos a Dra. ${draName} integrou um grupo de pesquisas na Universidade Monolítica da Galáxia. Seu objeto de estudo era o funcionamento do cérebro humano e sua percepção da realidade. A Dra. anunciou que havia feito uma descoberta inimaginável com potencial para alterar o curso da história. No dia do anúncio, no entanto, o laboratório explodiu. Nenhum corpo foi encontrado, e os registros da pesquisa se perderam. Desde então frascos com A Substância descoberta são encontrados de tempos em tempos em locais improváveis. `,
@@ -354,13 +341,7 @@ const textNodes = [
     ],
   },
 
-  //
-
-  //
-
-  //
-
-  // cena 12 transição
+  // CENA 12 (transição)
   {
     id: 12,
     text: `Cansado de não saber onde se meteu e sedento por respostas você decide que é hora de descobrir o que está acontecendo. O vidro biológico do ${nomeDoCarro} completou seu autorreparo e você está pronto para o salto.`,
@@ -373,7 +354,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 13
+
+  // CENA 13
   {
     id: 13,
     text: `Após anos luz de distância serem comprimidos em míseros segundos de existência você chega ao ${planetB}, ou o que sobrou dele. Ainda nauseado do salto você está no meio do que parece ter sido uma praça, agora tomada pela densa selva tropical que cobre o planeta. Prédios enormes por todos os lados. De algum ponto no centro da praça emana uma Névoa Roxa, com a mesma tonalidade d'A Substância no frasco. À sua esquerda, de frente para o centro da praça, um bar em pleno funcionamento.`,
@@ -396,7 +378,7 @@ const textNodes = [
     ],
   },
 
-  // cena 14
+  // CENA 14
   {
     id: 14,
     text: `Você se escora/apoia/encosta no ${nomeDoCarro} e começa a fechar seu ${cigarroDeArtista} enquanto observa o movimento de entra-e-sai no Bar envolto em Névoa Roxa. Impressionante como algumas formas de socialização permanecem e sobrevivem até mesmo após a queda total da civilização. O enjôo desaparece como mágica depois de duas tragadas.`,
@@ -414,7 +396,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 15
+
+  // CENA 15
   {
     id: 15,
     text: `A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com A Substância, sua entrada no bar é ignorada totalmente. Além da densa fumaça de cigarros, um tom arroxeado na fumaça chama sua a atenção pela semelhança com a cor d'A Substância.`,
@@ -437,7 +420,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 16
+
+  // CENA 16
   {
     id: 16,
     text:
@@ -463,7 +447,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 17
+
+  // CENA 17
   {
     id: 17,
     text: `O barman, que parece uma versão alienígena do Velho ${barman} fica visivelmente desconfortável com a pergunta: "Eu não sei de nada! É melhor você dar o fora e cuidar da sua VIDA.`,
@@ -480,8 +465,9 @@ const textNodes = [
         nextText: 16,
       },
     ],
-  },
-  // cena 18 transição
+  },(
+  
+  // CENA 18 (transição)
   {
     id: 18,
     text: `Se esgueirando por entre os escombros cheios de limo da antiga praça você se aproxima para observar melhor. Uma humanóide anda de um lado para o outro com alguma coisa na mão - um frasco igual ao seu. Ela parece impaciente e ansiosa. Prestando mais atenção você percebe que trata-se da Dra. ${draName}. Ela interrompe sua caminhada e percebe sua presença.`,
@@ -494,7 +480,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 19 transição
+
+  // CENA 19 (transição)
   {
     id: 19,
     text: `Esgueirando-se sem fazer nenhum ruído você contorna a praça para conseguir uma posição favorável de ataque. Os escombros e pedras soltas dificultam seu avanço e acabam por te fazer tropeçar, revelando sua presença. A Figura Enigmática se aproxima e revela ser a Dr. ${draName}. Ela parece completamente transtornada e ri ao reconhecer você.`,
@@ -507,7 +494,8 @@ const textNodes = [
       },
     ],
   },
-  // cena 20
+
+  // CENA 20
   {
     id: 20,
     text: `A Dr. ${draName} corre até você. Suas pupilas estão dilatadas, seus olhos são como duas azeitonas inchadas, um fino fio de baba escorre do canto da sua boca, suas roupas estão rasgadas e imundas: “É tudo uma simulação! Nós conseguimos quebrar o universo! Nós descobrimos... o caminho pra fora! Desde então eu tenho percorrido... o tempo... tentando encontrar um jeito de reunir minhas descobertas. O ${codigoFrasco} que você trouxe até mim é um extrato de ${plantaLouca}! Ele dissolve as amarras do programa... libertando a mente. Mas é fatal!”. A Doutora mostra o frasco que ela tem em suas mãos e você percebe que a substância tem uma cor levemente diferente. “Essa é minha outra descoberta: a Substância ${substanciaB} age no organismo limitando o efeito da Explosão Sônica causada pelo ${codigoFrasco}! Os dois devem ser usados juntos!”. A Doutora mistura as duas substâncias e oferece uma dose pra você.`,
@@ -520,7 +508,8 @@ const textNodes = [
       },
     ],
   },
-  // fim 1
+
+  // FIM 1
   {
     id: 51,
     text: `Você começa a ver cores que não existem e sente como se seu corpo não estivesse conectado com seus órgãos. A Galáxia é Você e Você é a Galáxia. Nada é verdadeiro, tudo é permitido.`,
@@ -533,7 +522,8 @@ const textNodes = [
       },
     ],
   },
-  // fim 2
+
+  // FIM 2
   {
     id: 52,
     text: `O Velho ${barman} arranca A Substância das suas mãos numa velocidade impossível. Num piscar de olhos abre o frasco e joga pra dentro da boca fétida e murcha todo o conteúdo roxo gosmento. Seus olhos instantaneamente transformam-se em dois grandes buracos negros sugando toda a luz do ambiente. Sua barriga infla e uma luz roxa vibra de dentro pra fora. Só há tempo de ver os primeiros milissegundos da explosão antes que tudo seja consumido pelo cogumelo cósmico da reação química entre o ${alien} e A Substância ${codigoFrasco}.`,
@@ -546,7 +536,8 @@ const textNodes = [
       },
     ],
   },
-  // fim 3
+
+  // FIM 3
   {
     id: 53,
     text: `Final no. 3`,
@@ -576,12 +567,14 @@ const textNodes = [
 
 startGame();
 
+// play / pause icon toggle
 $(document).ready(function () {
   $('i').click(function () {
     $('i').toggleClass('fas fa-play fa-2x fas fa-pause fa-2x');
   });
 });
 
+// play / pause audio
 var button = document.getElementById('button');
 var audio = document.getElementById('player');
 

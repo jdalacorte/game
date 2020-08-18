@@ -31,18 +31,6 @@ h3 {
   letter-spacing: 3px;
 }
 
-footer {
-  right: 25px;
-}
-
-footer,
-.soundtrack {
-  position: fixed;
-  bottom: 25px;
-  font-size: 0.8rem;
-  color: #111;
-}
-
 .line {
   font-size: 0.8rem;
 }
@@ -66,6 +54,18 @@ i:visited {
 i:hover {
   color: #111;
   cursor: pointer;
+}
+
+footer {
+  right: 25px;
+}
+
+footer,
+.soundtrack {
+  position: fixed;
+  bottom: 25px;
+  font-size: 0.8rem;
+  color: #111;
 }
 
 /* ids */
@@ -135,7 +135,7 @@ i:hover {
   border-radius: 5px 0 5px 0;
   border: 1px solid #111;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-  background-color: #111;
+  background: #111;
   color: #eee;
 }
 
@@ -157,18 +157,14 @@ i:hover {
     padding: 40px;
   }
 
-  footer {
-    display: none;
-  }
-
-  .title h1 {
-    font-size: 1.8rem;
-  }
-
   .container {
     max-width: 100%;
     margin: 0 auto 50px;
     padding: 10px;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
   }
 
   .img {
@@ -181,6 +177,10 @@ i:hover {
 
   .btn {
     font-size: 1rem;
+  }
+
+  footer {
+    display: none;
   }
 
   .soundtrack {
