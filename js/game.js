@@ -17,14 +17,11 @@ const optionButtonsElement = document.getElementById('option-buttons');
 
 let state = {};
 
-// start at
 function startGame() {
   state = {};
   showTextNode(0);
 }
 
-
-// cena / img
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerHTML = textNode.text;
@@ -33,7 +30,6 @@ function showTextNode(textNodeIndex) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
 
-//
   textNode.options.forEach((option) => {
     if (showOption(option)) {
       const button = document.createElement('button');
@@ -45,14 +41,10 @@ function showTextNode(textNodeIndex) {
   });
 }
 
-
-// required state to show option
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state);
 }
 
-
-// 
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
@@ -166,7 +158,7 @@ const textNodes = [
         nextText: 6,
       },
       {
-        text: `Perguntar o que ele sabe sobre A Substância ${codigoFrasco}`,
+        text: `Perguntar sobre A Substância ${codigoFrasco}`,
         nextText: 4,
         requiredState: (currentState) => currentState.papelCodigo,
       },
@@ -254,11 +246,7 @@ const textNodes = [
   },
   // no return
 
-<<<<<<< HEAD
   // CENA 8 (ouvir / ignorar msg)
-=======
-  // CENA 8
->>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
   {
     id: 8,
     text: `O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu ${nomeDoCarro} está pronto para um Salto Sônico. O ícone de mensagem recebida no monitor chama sua atenção.`,
@@ -468,13 +456,8 @@ const textNodes = [
         nextText: 16,
       },
     ],
-<<<<<<< HEAD
   },
 
-=======
-  },(
-  
->>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
   // CENA 18 (transição)
   {
     id: 18,
@@ -576,14 +559,12 @@ const textNodes = [
 
 startGame();
 
-// play / pause icon toggle
 $(document).ready(function () {
   $('i').click(function () {
     $('i').toggleClass('fas fa-play fa-2x fas fa-pause fa-2x');
   });
 });
 
-// play / pause audio
 var button = document.getElementById('button');
 var audio = document.getElementById('player');
 
