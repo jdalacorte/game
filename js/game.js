@@ -112,7 +112,7 @@ const textNodes = [
   // CENA 1
   {
     id: 1,
-    text: `<p>Você acorda no chão de uma das cabines no banheiro do ${nomeDoBar}, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um ${liquidoRoxo} que parece remédio para dor de barriga no seu bolso esquerdo. Apenas mais uma noite no ${nomeDoBar}.</p>`,
+    text: `<p>Você acorda no chão de uma das cabines no banheiro do ${nomeDoBar}, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um ${liquidoRoxo} que parece remédio para dor de barriga no seu bolso esquerdo.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -134,7 +134,7 @@ const textNodes = [
   // CENA 2
   {
     id: 2,
-    text: `Além de um maço de cigarros úmidos e um cadáver de rato espacial, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra um papel rasgado pela metade que parece ser uma prescrição médica. É possível ler apenas "Dra. ${draName}" e o código "${codigoFrasco}" - essa mesma sequência está anotada no frasco do ${liquidoRoxo}.`,
+    text: `<p>Além de um maço de cigarros úmidos e um cadáver de rato espacial, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra um papel rasgado pela metade que parece ser uma prescrição médica. É possível ler apenas "Dra. ${draName}" e o código "${codigoFrasco}" - essa mesma sequência está anotada no frasco do ${liquidoRoxo}.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -149,7 +149,7 @@ const textNodes = [
   // CENA 3
   {
     id: 3,
-    text: `Por baixo da porta de entrada é possível ver os primeiros raios do Segundo Sol indicando que você já perdeu a manhã toda. No balcão, o Velho ${barman} lhe observa com indiferença enquanto fecha um de seus cigarros fedorentos.`,
+    text: `<p>Por baixo da porta de entrada é possível ver os primeiros raios do <span class="var">Segundo Sol</span> indicando que você já perdeu a manhã toda. No balcão, o Velho ${barman} te observa com indiferença enquanto fecha um de seus cigarros fedorentos.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -158,12 +158,12 @@ const textNodes = [
         nextText: 6,
       },
       {
-        text: `Perguntar sobre A Substância ${codigoFrasco}`,
+        text: `Perguntar o que ele sabe sobre A Substância ${codigoFrasco}`,
         nextText: 4,
         requiredState: (currentState) => currentState.papelCodigo,
       },
       {
-        text: 'Dar de ombros e <span class="var">sair do bar</span>',
+        text: '<span class="var">Sair</span> do bar',
         nextText: 7,
       },
     ],
@@ -172,7 +172,7 @@ const textNodes = [
   // CENA 4 (transição)
   {
     id: 4,
-    text: `Uma das vantagens de ser um Local no ${nomeDoBar} é que você sabe que o Velho ${barman} antes de passar suas horas resmungando atrás do balcão empoeirado também foi um Trambiqueiro Espacial como você e pode ajudar a desvendar esse pequeno mistério ressaquento.`,
+    text: `<p>Uma das vantagens de ser um Local no ${nomeDoBar} é que você sabe que o Velho ${barman} antes de passar suas horas resmungando atrás do balcão empoeirado também foi um Trambiqueiro Espacial como você e pode ajudar a desvendar esse pequeno mistério ressaquento.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -186,7 +186,7 @@ const textNodes = [
   // CENA 5
   {
     id: 5,
-    text: `O Velho ${barman} explica que A Substância ${codigoFrasco} não é produzida há mais de 300 anos e que provavelmente esse frasco veio parar nesse buraco no Limiar da Galáxia por meio de Contrabando Sônico - uma forma de viagem no tempo. Suas propriedades são desconhecidas já que sua criadora, a Dra. ${draName} desapareceu logo após sua descoberta. Ele muda de feição instantaneamente e pede para ver A Substância mais de perto.`,
+    text: `<p>O Velho ${barman} explica que A Substância ${codigoFrasco} não é produzida há mais de 300 anos e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico - uma forma de viagem no tempo. Suas propriedades são desconhecidas já que sua "criadora", a Dra. ${draName}, desapareceu logo após a descoberta. Ele muda de feição instantaneamente e pede para ver A Substância mais de perto.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -208,7 +208,7 @@ const textNodes = [
   // CENA 6
   {
     id: 6,
-    text: `O Velho ${barman} ignora sua pergunta e segue olhando fixamente para A Substância. Um sentimento esmagador toma conta de seu peito. É hora de dar o fora.`,
+    text: `<p>O Velho ${barman} ignora sua pergunta e segue olhando fixamente para o frasco d'A Substância em sua mão. Um sentimento esmagador toma conta de seu peito. É hora de dar o fora.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -222,7 +222,7 @@ const textNodes = [
   // CENA 7 (carro)
   {
     id: 7,
-    text: `Sem seus óculos escuros você leva alguns segundos para conseguir adaptar a visão e achar seu ${nomeDoCarro} estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.`,
+    text: `<p>Sem seus óculos escuros você leva alguns segundos para conseguir adaptar a visão ao dia e achar seu ${nomeDoCarro} estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -249,7 +249,7 @@ const textNodes = [
   // CENA 8 (ouvir / ignorar msg)
   {
     id: 8,
-    text: `O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu ${nomeDoCarro} está pronto para um Salto Sônico. O ícone de mensagem recebida no monitor chama sua atenção.`,
+    text: `<p>O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu ${nomeDoCarro} está pronto para um Salto Sônico. O ícone de mensagem recebida no monitor chama sua atenção.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -271,7 +271,7 @@ const textNodes = [
   // CENA 9 (mensagem)
   {
     id: 9,
-    text: `O rosto que aparece no telecomunicador não é familiar, você ouve atentamente a mensagem: A Dra. ${draName} se apresenta e avisa que você corre perigo e que forças sinistras estão atrás d'A Substância que pode alterar o curso da vida na Galáxia. Ela pede para que você salte imediatamente para ${planetB} e lhe passa as coordenadas.`,
+    text: `<p>O rosto que aparece no telecomunicador é e não é familiar. Uma espécie de <em>déjà vu</em>. Você ouve atentamente a mensagem: A Dra. ${draName} se apresenta e avisa que você &mdash; seja lá quem for que estiver em posse d'A Substância &mdash; corre perigo e que forças sinistras estão atrás d'A Substância que pode alterar o curso da vida na Galáxia. Ela pede para que você salte imediatamente para ${planetB} e mostra um papel com as coordenadas.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -296,12 +296,12 @@ const textNodes = [
   {
     id: 10,
     text:
-      'Ao chegar em casa você se depara com a porta arrombada e com suas coisas reviradas. Alguém está atrás de você, e você não faz ideia do que está acontecendo.',
+      '<p>Ao chegar em casa você se depara com a <span class="var>porta arrombada e suas coisas reviradas</span>. Alguém está atrás de você, e você não faz ideia do que está acontecendo.</p>',
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
       {
-        text: `Seguir as Instruções e saltar para ${planetB}`,
+        text: `Seguir as instruções e saltar para ${planetB}`,
         requiredState: (currentState) => currentState.mensagemOK,
         nextText: 12,
       },
@@ -321,7 +321,7 @@ const textNodes = [
   // CENA 11 (google)
   {
     id: 11,
-    text: `Há cerca de 300 anos a Dra. ${draName} integrou um grupo de pesquisas na Universidade Monolítica da Galáxia. Seu objeto de estudo era o funcionamento do cérebro humano e sua percepção da realidade. A Dra. anunciou que havia feito uma descoberta inimaginável com potencial para alterar o curso da história. No dia do anúncio, no entanto, o laboratório explodiu. Nenhum corpo foi encontrado, e os registros da pesquisa se perderam. Desde então frascos com A Substância descoberta são encontrados de tempos em tempos em locais improváveis. `,
+    text: `<p>Há cerca de 300 anos a Dra. ${draName} integrou um grupo de pesquisas na Universidade Monolítica da Galáxia. Seu objeto de estudo era o funcionamento do cérebro humano e sua percepção da realidade. A Dra. anunciou que havia feito uma descoberta inimaginável com potencial para alterar o curso da história. No dia do anúncio, no entanto, o laboratório explodiu. Nenhum corpo foi encontrado, e os registros da pesquisa se perderam. Desde então frascos com A Substância descoberta são encontrados em determinados períodos no tempo e em locais improváveis no Universo.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -335,7 +335,7 @@ const textNodes = [
   // CENA 12 (transição)
   {
     id: 12,
-    text: `Cansado de não saber onde se meteu e sedento por respostas você decide que é hora de descobrir o que está acontecendo. O vidro biológico do ${nomeDoCarro} completou seu autorreparo e você está pronto para o salto.`,
+    text: `Com o cansaço de não saber onde se meteu e a sede por respostas você decide que é hora de descobrir o que está acontecendo. O vidro biológico do ${nomeDoCarro} completou seu autorreparo e você está pronto para o salto.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -349,7 +349,7 @@ const textNodes = [
   // CENA 13
   {
     id: 13,
-    text: `Após anos luz de distância serem comprimidos em míseros segundos de existência você chega ao ${planetB}, ou o que sobrou dele. Ainda nauseado do salto você está no meio do que parece ter sido uma praça, agora tomada pela densa selva tropical que cobre o planeta. Prédios enormes por todos os lados. De algum ponto no centro da praça emana uma Névoa Roxa, com a mesma tonalidade d'A Substância no frasco. À sua esquerda, de frente para o centro da praça, um bar em pleno funcionamento.`,
+    text: `Após anos luz de distância serem comprimidos em míseros segundos de existência você chega ao ${planetB}, ou o que sobrou dele. Ainda com a náusea causada pelo salto, você se encontra no meio do que parece ter sido uma praça, agora tomada pela densa selva tropical que cobre o planeta. Prédios enormes por todos os lados. De algum ponto no centro da praça emana uma Névoa Roxa, com a mesma tonalidade d'A Substância no frasco. À sua esquerda, de frente para o centro da praça, um bar em pleno funcionamento.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -372,7 +372,7 @@ const textNodes = [
   // CENA 14
   {
     id: 14,
-    text: `Você se escora/apoia/encosta no ${nomeDoCarro} e começa a fechar seu ${cigarroDeArtista} enquanto observa o movimento de entra-e-sai no Bar envolto em Névoa Roxa. Impressionante como algumas formas de socialização permanecem e sobrevivem até mesmo após a queda total da civilização. O enjôo desaparece como mágica depois de duas tragadas.`,
+    text: `Você se encosta no ${nomeDoCarro} e começa a fechar seu ${cigarroDeArtista} enquanto observa o movimento de <em>entra-e-sai</em> no Bar envolto em Névoa Roxa. Impressionante como algumas formas de socialização permanecem e sobrevivem até mesmo após a queda total da civilização. O enjôo desaparece como mágica depois de duas tragadas.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -391,7 +391,7 @@ const textNodes = [
   // CENA 15
   {
     id: 15,
-    text: `A mesma CENA em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa CENA de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com A Substância, sua entrada no bar é ignorada totalmente. Além da densa fumaça de cigarros, um tom arroxeado na fumaça chama sua a atenção pela semelhança com a cor d'A Substância.`,
+    text: `A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com <span class="var">A Substância</span>, sua entrada no bar é totalmente ignorada. Além da densa fumaça de cigarros, um tom arroxeado no ar chama sua a atenção pela semelhança com a cor d'A Substância.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -416,7 +416,7 @@ const textNodes = [
   {
     id: 16,
     text:
-      'Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa clareira no centro da praça. De um buraco na terra um vapor denso e Roxo é expelido como em um geiser. Uma silhueta enigmática pode ser vista através do vapor. Aparentemente sua presença não foi percebida.',
+      'Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa clareira no centro da praça. De um buraco na terra um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua presença não foi percebida.',
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -442,7 +442,7 @@ const textNodes = [
   // CENA 17
   {
     id: 17,
-    text: `O barman, que parece uma versão alienígena do Velho ${barman} fica visivelmente desconfortável com a pergunta: "Eu não sei de nada! É melhor você dar o fora e cuidar da sua VIDA.`,
+    text: `O barman, que parece uma versão alienígena do Velho ${barman} fica visivelmente desconfortável com a pergunta: <span class="var">"Eu não sei de nada! É melhor você dar o fora e cuidar da sua VIDA!"</span>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -461,7 +461,7 @@ const textNodes = [
   // CENA 18 (transição)
   {
     id: 18,
-    text: `Se esgueirando por entre os escombros cheios de limo da antiga praça você se aproxima para observar melhor. Uma humanóide anda de um lado para o outro com alguma coisa na mão - um frasco igual ao seu. Ela parece impaciente e ansiosa. Prestando mais atenção você percebe que trata-se da Dra. ${draName}. Ela interrompe sua caminhada e percebe sua presença.`,
+    text: `Se esgueirando por entre os escombros cheios de limo da antiga praça você se aproxima para observar melhor o que acontece. Uma humanóide anda de um lado para o outro com alguma coisa na mão &mdash; um frasco igual ao seu. Ela parece impaciente e ansiosa. Prestando mais atenção você percebe que trata-se da Dra. ${draName}. Ela interrompe sua caminhada ao perceber sua presença.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
@@ -517,7 +517,7 @@ const textNodes = [
   // FIM 2
   {
     id: 52,
-    text: `O Velho ${barman} arranca A Substância das suas mãos numa velocidade impossível. Num piscar de olhos abre o frasco e joga pra dentro da boca fétida e murcha todo o conteúdo roxo gosmento. Seus olhos instantaneamente transformam-se em dois grandes buracos negros sugando toda a luz do ambiente. Sua barriga infla e uma luz roxa vibra de dentro pra fora. Só há tempo de ver os primeiros milissegundos da explosão antes que tudo seja consumido pelo cogumelo cósmico da reação química entre o ${alien} e A Substância ${codigoFrasco}.`,
+    text: `O Velho ${barman} arranca A Substância das suas mãos numa velocidade impossível. Num piscar de olhos abre o frasco e joga pra dentro da boca fétida e murcha todo o conteúdo Roxo e gosmento. Seus olhos instantaneamente transformam-se em dois grandes buracos negros sugando toda a luz do ambiente. Sua barriga infla e uma luz Roxa vibra de dentro pra fora. Só há tempo de ver os primeiros milissegundos da explosão antes que tudo seja consumido pelo cogumelo cósmico da reação química entre o ${alien} e A Substância ${codigoFrasco}.`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [
