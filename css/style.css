@@ -118,6 +118,11 @@ i:hover {
   font-family: 'Space Mono', monospace;
 }
 
+.btn-creditos {
+  background-color: #111;
+  color: #eee;
+}
+
 .btn:hover {
   border-radius: 5px 0 5px 0;
   border: 1px solid #111;
