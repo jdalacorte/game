@@ -6,4 +6,4 @@ This is a simple interactive story game about a _Space Rambler_ who wakes up in 
 
 This game was made in collaboration with [Daniel Hogrefe](https://danielhogrefe.tumblr.com/).
 
-The engine of the game was based on [WebDevSimplified]'s(https://github.com/WebDevSimplified) code.
+The engine of the game was based on [WebDevSimplified's](https://github.com/WebDevSimplified) code.
