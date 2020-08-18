@@ -7,11 +7,12 @@
   padding: 0;
 }
 
+/* elements */
 html {
   font-family: 'Space Mono', monospace;
+  font-size: 16px;
 }
 
-/* elements */
 body {
   background: #222;
   background: url(../img/bg.jpg);
@@ -22,16 +23,22 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-weight: normal;
+  letter-spacing: 3px;
 }
 
 footer {
-  right: 10px;
+  right: 25px;
 }
 
 footer,
 .soundtrack {
   position: fixed;
-  bottom: 10px;
+  bottom: 25px;
   font-size: 0.8rem;
   color: #111;
 }
@@ -41,8 +48,7 @@ footer,
 }
 
 a,
-.var,
-i {
+.var {
   font-weight: bold;
   color: crimson;
 }
@@ -51,7 +57,10 @@ a:hover {
   text-decoration: none;
 }
 
-i {
+i,
+i:visited {
+  color: crimson;
+  transition: all 0.2s ease-in-out;
 }
 
 i:hover {
@@ -63,12 +72,14 @@ i:hover {
 #text {
   background: #111;
   color: #eee;
-  padding: 20px;
+  padding: 50px;
   margin: 20px auto;
   text-align: justify;
   border: 1px solid #222;
   border-radius: 10px 0 10px 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  line-height: 1.5;
 }
 
 /* classes */
@@ -85,7 +96,8 @@ i:hover {
 }
 
 .title h1 {
-  /* text-transform: uppercase; */
+  letter-spacing: 15px;
+  text-transform: uppercase;
   color: #548484;
 }
 
@@ -106,6 +118,7 @@ i:hover {
   grid-template-columns: repeat(2, auto);
   gap: 5px;
   margin: 20px auto 0;
+  width: 90%;
 }
 
 .btn {
@@ -118,11 +131,6 @@ i:hover {
   font-family: 'Space Mono', monospace;
 }
 
-.btn-creditos {
-  background-color: #111;
-  color: #eee;
-}
-
 .btn:hover {
   border-radius: 5px 0 5px 0;
   border: 1px solid #111;
@@ -132,16 +140,23 @@ i:hover {
 }
 
 .credits {
+  padding: 50px;
   text-align: center;
   line-height: 2;
 }
 
 .soundtrack {
-  left: 10px;
+  left: 25px;
 }
 
 /* queries */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  #text {
+    width: 100%;
+    line-height: 1.7;
+    padding: 40px;
+  }
+
   footer {
     display: none;
   }
@@ -158,6 +173,14 @@ i:hover {
 
   .img {
     max-width: 100%;
+  }
+
+  .btn-grid {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1rem;
   }
 
   .soundtrack {
