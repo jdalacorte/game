@@ -572,3 +572,20 @@ const textNodes = [
 ];
 
 startGame();
+
+$(document).ready(function () {
+  $('i').click(function () {
+    $('i').toggleClass('fas fa-play-circle fas fa-pause-circle');
+  });
+});
+
+var button = document.getElementById('button');
+var audio = document.getElementById('player');
+
+button.addEventListener('click', function () {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});

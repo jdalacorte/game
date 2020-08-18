@@ -3,9 +3,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: 'Space Mono', monospace;
 }
 
 /* elements */
@@ -30,6 +33,7 @@ footer {
 }
 
 a {
+  color: crimson;
 }
 
 /* ids */
@@ -88,6 +92,7 @@ a {
   padding: 5px;
   transition: all 0.35s ease-in-out;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Space Mono', monospace;
 }
 
 .btn:hover {
@@ -111,18 +116,6 @@ a,
 
 a:hover {
   text-decoration: none;
-}
-
-.unmute {
-  background-image: url(../img/no-sound.svg);
-  background-size: cover;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-
-.mute {
-  background-image: url(../img/volume-up.svg);
 }
 
 .soundtrack {
