@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-// 
->>>>>>> 6a575fb46e8978dc9354ea96b8d02676e064bcd9
 const alien = '<span class="var">Kroptiliano</span>';
 const nomeDoBar = `<span class="var">Mondrian's</span>`;
 const liquidoRoxo = '<span class="var">Líquido Roxo</span>';
