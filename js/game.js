@@ -112,7 +112,7 @@ const textNodes = [
   // CENA 1
   {
     id: 1,
-    text: `<p>Você acorda no chão de uma das cabines no banheiro do ${nomeDoBar}, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um ${liquidoRoxo} que parece remédio para dor de barriga no seu bolso esquerdo.</p>`,
+    text: `<p id="scene">Você acorda no chão de uma das cabines no banheiro do ${nomeDoBar}, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um ${liquidoRoxo} que parece remédio para dor de barriga no seu bolso esquerdo.</p>`,
     img:
       '<img class="img" src="https://i.pinimg.com/originals/21/10/9a/21109a8e06845655f1d28fb8346add75.jpg" alt="test-img" />',
     options: [

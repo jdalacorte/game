@@ -31,10 +31,6 @@ h3 {
   letter-spacing: 3px;
 }
 
-.line {
-  font-size: 0.8rem;
-}
-
 a,
 .var {
   font-weight: bold;
@@ -47,16 +43,16 @@ a:hover {
 
 i,
 i:visited {
-  color: crimson;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 i:hover {
-  color: #111;
-  cursor: pointer;
+  color: #333;
 }
 
 footer {
+  font-weight: bold;
   right: 25px;
 }
 
@@ -91,6 +87,10 @@ footer,
   text-align: center;
 }
 
+.line {
+  font-size: 0.8rem;
+}
+
 .title {
   text-align: center;
 }
@@ -118,6 +118,7 @@ footer,
   grid-template-columns: repeat(2, 50%);
   gap: 5px;
   margin: 20px auto 0;
+  padding: 0;
   width: 90%;
 }
 
@@ -185,5 +186,6 @@ footer,
 
   .soundtrack {
     left: 90%;
+    bottom: 15px;
   }
 }
