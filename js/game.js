@@ -64,7 +64,7 @@ const textNodes = [
         SPACE MUAMBA 3020<sub class="line">demo</sub>
       </h1>
       <h3>
-        Medo e delírio no Limiar da Galáxia
+        Medo e Delírio no Limiar da Galáxia
       </h3>
       <br>
       <p class="line">
