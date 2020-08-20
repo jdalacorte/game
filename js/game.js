@@ -101,8 +101,8 @@ const textNodes = [
     <p><a href="https://ae0n.bandcamp.com/releases" target="_blank">Aeon</a> & <a href="https://cruisenoir.bandcamp.com/releases" target="_blank">Cruise Noir</a></p>
     <br>
     <h4 class="var">Recursos:</h4>
-    <p><a href="https://github.com/WebDevSimplified" target="_blank">Web Dev Simplified</a></p>
-    <p><a href="https://animate.style/" target="_blank">Animate.css</a></p>
+    <p class="line"><a href="https://github.com/WebDevSimplified" target="_blank">Web Dev Simplified</a></p>
+    <p class="line"><a href="https://animate.style/" target="_blank">Animate.css</a></p>
   </div >`,
     img: '',
     options: [
