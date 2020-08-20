@@ -14,8 +14,7 @@ html {
 }
 
 body {
-  background: #222;
-  background: url(../img/bg.jpg);
+  background: url(https://i.imgur.com/kbhAxrv.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -41,14 +40,18 @@ a:hover {
   text-decoration: none;
 }
 
-i,
-i:visited {
+i {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 i:hover {
-  color: #333;
+  color: crimson;
+}
+
+i:active {
+  position: relative;
+  top: 1px;
 }
 
 footer {
@@ -71,9 +74,9 @@ footer,
   padding: 50px;
   margin: 20px auto;
   text-align: justify;
-  border: 1px solid #222;
+  border: 3px solid #111;
   border-radius: 10px 0 10px 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 0 #eee;
   width: 90%;
   line-height: 1.5;
 }
@@ -83,11 +86,12 @@ footer,
   align-items: center;
   width: 900px;
   max-width: 80%;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 
-.line {
+sub.line {
+  color: #649494;
   font-size: 0.8rem;
 }
 
@@ -95,14 +99,14 @@ footer,
   text-align: center;
 }
 
-.title h1 {
+.title > h1 {
   letter-spacing: 15px;
   text-transform: uppercase;
-  color: #548484;
+  color: crimson;
 }
 
 .img {
-  background: #ffe;
+  background: #eee;
   margin: auto;
   max-width: 768px;
   width: 100%;
@@ -110,7 +114,8 @@ footer,
   height: auto;
   border: 10px solid transparent;
   border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 0 #111;
+  object-fit: cover;
 }
 
 .btn-grid {
@@ -124,20 +129,25 @@ footer,
 
 .btn {
   border-radius: 0 5px 0 5px;
-  border: 1px solid #111;
+  border: 3px solid #111;
   cursor: pointer;
   padding: 5px;
-  transition: all 0.35s ease-in-out;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 0 #111;
   font-family: 'Space Mono', monospace;
 }
 
 .btn:hover {
-  border-radius: 5px 0 5px 0;
-  border: 1px solid #111;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  /* border-radius: 5px 0 5px 0; */
+  border: 3px solid #111;
+  box-shadow: 3px 3px 0 #eee;
   background: #111;
   color: #eee;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
 }
 
 .credits {
@@ -146,8 +156,39 @@ footer,
   line-height: 2;
 }
 
+.credits a {
+  text-decoration: none;
+  color: #eee;
+  border-bottom: 2px solid crimson;
+  transition: border-bottom 0.2s;
+}
+
+.credits a:hover {
+  border-bottom: 2px solid #111;
+}
+
 .soundtrack {
   left: 25px;
+  width: 150px;
+}
+
+.soundtrack .playbtn {
+  text-align: center;
+}
+
+.playtxt {
+  font-size: 0.7rem;
+}
+
+.playtxt a {
+  text-decoration: none;
+  color: #111;
+  border-bottom: 2px solid crimson;
+  transition: border-bottom 0.2s;
+}
+
+.playtxt a:hover {
+  border-bottom: 2px solid transparent;
 }
 
 /* queries */
@@ -185,7 +226,12 @@ footer,
   }
 
   .soundtrack {
-    left: 90%;
+    left: 75%;
     bottom: 15px;
+  }
+
+  .playtxt {
+    display: none;
+    visibility: hidden;
   }
 }
