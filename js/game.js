@@ -63,13 +63,8 @@ const textNodes = [
       <h1 class="animate__animated animate__fadeIn">
         Space Muamba 3020<sub class="line">demo</sub>
       </h1>
-<<<<<<< HEAD
       <h3 class="animate__animated animate__fadeIn animate__slow">
         Medo e delírio no Limiar da Galáxia
-=======
-      <h3>
-        Medo e Delírio no Limiar da Galáxia
->>>>>>> 03c2fe5ac75fb124d331e65857b4c54fc33f92a3
       </h3>
       <br>
       <p class="line animate__animated animate__fadeIn animate__slower">
