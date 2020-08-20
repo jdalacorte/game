@@ -30,6 +30,10 @@ h3 {
   letter-spacing: 3px;
 }
 
+h4 {
+  margin-top: 1.1rem;
+}
+
 a,
 .var {
   font-weight: bold;
@@ -72,11 +76,11 @@ footer,
   background: #111;
   color: #eee;
   padding: 50px;
-  margin: 20px auto;
+  margin: 5px auto 5px auto;
   text-align: justify;
   border: 3px solid #111;
   border-radius: 10px 0 10px 0;
-  box-shadow: 3px 3px 0 #eee;
+  box-shadow: 3px 3px 0 crimson;
   width: 90%;
   line-height: 1.5;
 }
@@ -103,6 +107,7 @@ sub.line {
   letter-spacing: 15px;
   text-transform: uppercase;
   color: crimson;
+  font-weight: bold;
 }
 
 .img {
@@ -118,11 +123,15 @@ sub.line {
   object-fit: cover;
 }
 
+.img:hover {
+  box-shadow: 3px 3px 0 crimson;
+}
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   gap: 5px;
-  margin: 20px auto 0;
+  margin: auto;
   padding: 0;
   width: 90%;
 }
@@ -132,6 +141,7 @@ sub.line {
   border: 3px solid #111;
   cursor: pointer;
   padding: 5px;
+  margin: 3px 5px;
   transition: all 0.2s ease-in-out;
   box-shadow: 3px 3px 0 #111;
   font-family: 'Space Mono', monospace;
@@ -140,7 +150,7 @@ sub.line {
 .btn:hover {
   /* border-radius: 5px 0 5px 0; */
   border: 3px solid #111;
-  box-shadow: 3px 3px 0 #eee;
+  box-shadow: 3px 3px 0 crimson;
   background: #111;
   color: #eee;
 }

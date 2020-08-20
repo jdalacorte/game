@@ -89,14 +89,14 @@ const textNodes = [
   {
     id: 420,
     text: `<div class="title">
-      <h1> Space Muamba 3020<sub class="line">demo</sub></h1></div>
+      <h1>Space Muamba 3020<sub class="line">demo</sub></h1></div>
   <div class="credits animate__animated animate__zoomIn">
     <h4 class="var">Criação</h4>
     <p>Daniel Hogrefe & Jonas Dalacorte</p>
     <h4 class="var">Arte</h4>
-    <p>Daniel Hogrefe</p>
-    <h4 class="var">Mecanismo & Programação</h4>
-    <p>Jonas Dalacorte</p>
+    <p><a href="https://danielhogrefe.tumblr.com/" target="_blank">Daniel Hogrefe</a></p>
+    <h4 class="var">Web Design e Programação</h4>
+    <p><a href="https://github.com/dpsmkr/" target="_blank">Jonas Dalacorte</a></p>
     <h4 class="var">Trilha Original</h4>
     <p><a href="https://ae0n.bandcamp.com/releases" target="_blank">Aeon</a> & <a href="https://cruisenoir.bandcamp.com/releases" target="_blank">Cruise Noir</a></p>
     <br>
