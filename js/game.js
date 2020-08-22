@@ -59,10 +59,21 @@ const textNodes = [
   // HOME
   {
     id: 0,
+<<<<<<< HEAD
     text: 
     `<div class="title">
       <h1 class="main-title anim-txt">nome<sub class="subline">demo</sub></h1>
       <h3 class="subtitle">Medo e delírio no Limiar da Galáxia</h3>
+=======
+    text: `
+    <div class="title">
+      <h1 class="animate__animated animate__fadeIn">
+        Space Muamba 3020<sub class="line">demo</sub>
+      </h1>
+      <h3 class="animate__animated animate__fadeIn animate__slow">
+        Medo e delírio no Limiar da Galáxia
+      </h3>
+>>>>>>> 9df46d9d9a7642f548292f9b6a9fe60d4e6ab849
       <br>
       <p class="line animate__animated animate__slideInUp animate__faster">Criado por Daniel Hogrefe & Jonas Dalacorte</p>
     </div>`,
