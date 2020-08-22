@@ -35,8 +35,10 @@
 
   <body>
     <div class="container">
-      <div id="img" class="animate__animated animate__zoomIn"></div>
-      <div id="text"></div>
+      <div id="img"></div>
+
+      <div id="text" class="text"></div>
+
       <div id="option-buttons" class="btn-grid">
         <button class="btn"></button>
         <button class="btn"></button>
@@ -44,24 +46,17 @@
         <button class="btn"></button>
       </div>
     </div>
-    <div class="soundtrack">
+    <div class="footer soundtrack">
       <audio id="player" loop>
         <source src="" type="audio/mp3" />
       </audio>
       <div class="playbtn">
-        <i id="button" class="fas fa-play fa-2x"></i>
-        <p class="playtxt">
-          Trilha musical por
-          <a href="https://ae0n.bandcamp.com/releases" target="_blank">Aeon</a>
-          &
-          <a href="https://cruisenoir.bandcamp.com/releases" target="_blank"
-            >Cruise Noir</a
-          >
-        </p>
+        <i id="button" class="icon fas fa-volume-up fa-2x"></i>
+        
       </div>
     </div>
-    <footer>
-      <p>Demo</p>
+    <footer class="footer">
+      <p>DEMO 0.1.0</p>
     </footer>
 
     <!-- jquery -->
@@ -73,5 +68,6 @@
 
     <!-- game -->
     <script src="./js/game.js"></script>
+    <script src="./js/bg.js"></script>
   </body>
 </html>
