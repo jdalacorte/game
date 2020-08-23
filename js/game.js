@@ -445,20 +445,7 @@ const textNodes = [
   // CENA 18 (transição)
   {
     id: 18,
-    text: `<p class="txt animate__animated animate__fadeIn">Se esgueirando por entre os escombros cheios de limo da antiga praça você se aproxima para observar melhor o que acontece. Uma humanóide anda de um lado para o outro com alguma coisa na mão &mdash; um frasco igual ao seu. Ela parece impaciente e ansiosa. Investigando com mais atenção você percebe se tratar da <span class="var">Dra. ${draName}</span>. Ela interrompe sua caminhada ao perceber sua presença.<span class="cursor-blink">|</strong></p>`,
-    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
-    options: [
-      {
-        text: '<strong>>>></strong>',
-        nextText: 20,
-      },
-    ],
-  },
-
-  // CENA 19 (transição)
-  {
-    id: 19,
-    text: `<p class="txt animate__animated animate__fadeIn">Esgueirando-se sem fazer nenhum ruído você contorna a praça para conseguir uma posição favorável de ataque. Os escombros e pedras soltas dificultam seu avanço e acabam por te fazer tropeçar, revelando sua presença. A Figura Enigmática se aproxima e revela ser a <span class="var">Dr. ${draName}</span>. Ela parece completamente transtornada e ri ao reconhecer você.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Se esgueirando por entre os escombros cheios de limo da antiga praça você tenta uma aproximação. A Figura Enigmática tem algo em suas mãos &mdash; um frasco igual ao seu. Investigando com mais atenção você percebe se tratar da <span class="var">Dra. ${draName}</span>. Ela percebe sua presença.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -471,7 +458,7 @@ const textNodes = [
   // CENA 20
   {
     id: 20,
-    text: `<p class="txt animate__animated animate__fadeIn">A Dr. ${draName} corre até você. Suas pupilas estão dilatadas, seus olhos são como duas azeitonas inchadas, um fino fio de baba escorre do canto da sua boca, suas roupas estão rasgadas e imundas: "É tudo uma simulação! Nós conseguimos quebrar o universo! Nós descobrimos... o caminho pra fora! Desde então eu tenho percorrido... o tempo... tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">${codigoFrasco}</span> que você trouxe até mim é um extrato de <span class="var" style="font-style: italic;">${plantaLouca}</span>! Ele dissolve as amarras do programa... libertando a mente. Mas é fatal!”. A Doutora mostra o frasco que ela tem em suas mãos e você percebe que a substância tem uma cor levemente diferente. “Essa é minha outra descoberta: <span class="var">A Substância ${substanciaB}</span> age no organismo limitando o efeito da Explosão Sônica causada pelo ${codigoFrasco}! Os dois devem ser usados juntos!". A Doutora mistura as duas substâncias e oferece uma dose pra você.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A Dr. ${draName} corre até você. Suas pupilas estão dilatadas, seus olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o universo. Nós descobrimos o caminho pra fora. Desde então eu tenho percorrido o tempo tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">${codigoFrasco}</span> que você trouxe até mim é um extrato de <span class="var" style="font-style: italic;">${plantaLouca}</span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal.”. A Doutora mostra o frasco que ela tem em suas mãos e você percebe que a substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância ${substanciaB}</span> age no organismo limitando o efeito da Explosão Sônica causada pela ${codigoFrasco}. Os dois devem ser usados juntos.". A Doutora mistura as duas substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -480,7 +467,7 @@ const textNodes = [
       },
       {
         text: '<strong>Recusar</strong> a dose',
-        nextText: 53,
+        nextText: 52,
       },
     ],
   },
@@ -501,7 +488,7 @@ const textNodes = [
   // FIM 2
   {
     id: 52,
-    text: `<p class="animate__animated animate__fadeIn fim"><span class="cursor-blink">|</strong></p>`,
+    text: '<p class="var end-txt">Game Over</p>',
     img: '<img class="img" src="./img/ph.jpg" alt="" title="Daniel Hogrefe"/>',
     options: [
       {

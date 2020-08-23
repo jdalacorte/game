@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: url(../img/bg.gif);
+  background: url(https://mocah.org/uploads/posts/1070012-illustration-digital-art-video-games-pixel-art-planet-water-space-futuristic-stars-hills-astronaut-pixels-spaceship-fan-art-pixelated-No-Mans-Sky-universe-3d-object-scr.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -70,6 +70,10 @@ body {
   max-width: 768px;
   width: 90%;
   line-height: 1.5;
+}
+
+.text-null {
+  display: none;
 }
 
 .txt {
@@ -165,10 +169,9 @@ body {
 /* buttons */
 .btn-grid {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
   margin: auto;
   max-width: 768px;
-  width: 90%
+  width: 90%;
 }
 
 .btn {
@@ -192,7 +195,7 @@ body {
 
 .btn:active {
   position: relative;
-  top: 2px;
+  top: 3px;
 }
 
 /* credits */
@@ -214,7 +217,7 @@ body {
   position: fixed;
   bottom: 25px;
   font-size: 0.8rem;
-  color: #111;
+  color: crimson;
   font-weight: bold;
   right: 25px;
 }
@@ -226,12 +229,13 @@ body {
 }
 
 .icon {
+  color: crimson;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .icon:hover {
-  color: crimson;
+  color: #eee;
 }
 
 .icon:active {
