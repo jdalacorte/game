@@ -1,3 +1,4 @@
+const gameName = 'Aeon 3021';
 const alien = 'Kroptiliano';
 const nomeDoBar = `Mondrian's`;
 const liquidoRoxo = 'Líquido Roxo';
@@ -61,7 +62,7 @@ const textNodes = [
     id: 0,
     text: 
     `<div class="title">
-      <h1 class="main-title anim-txt">nome<sub class="subline">demo</sub></h1>
+      <h1 class="main-title anim-txt">${gameName}<sub class="subline">demo</sub></h1>
       <h3 class="subtitle">Medo e delírio no Limiar da Galáxia</h3>
       <br>
       <p class="line animate__animated animate__slideInUp animate__faster">Criado por Daniel Hogrefe & Jonas Dalacorte</p>
@@ -85,7 +86,7 @@ const textNodes = [
     id: 420,
     text: 
     `<div class="title">
-      <h1 class="credits-title animate__animated animate__lightSpeedInRight animate__fast">Space Muamba 3020<sub class="subline">demo</sub></h1>
+      <h1 class="credits-title animate__animated animate__lightSpeedInRight animate__fast">${gameName}<sub class="subline">demo</sub></h1>
     </div>
   <div class="credits">
     <h4 class="credits-title">Criação</h4>
