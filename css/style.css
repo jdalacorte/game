@@ -135,6 +135,30 @@ body {
   text-decoration: none;
 }
 
+/* lang */
+.lang-select {
+  color: crimson;
+}
+
+.lang-link:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.active {
+  cursor: pointer;
+  border-bottom: 2px solid crimson;
+}
+
+.active:hover {
+  border-bottom: 2px solid transparent;
+}
+
+.lang-link,
+.lang-link:visited {
+  text-decoration: none;
+  color: crimson;
+}
+
 /* typer */
 .anim-txt {
   overflow: hidden;
@@ -223,6 +247,10 @@ body {
   right: 25px;
 }
 
+.ver {
+  color: rgb(221, 62, 94);
+}
+
 /* soundtrack */
 .soundtrack {
   left: 25px;
@@ -233,6 +261,7 @@ body {
   color: crimson;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin-right: 15px;
 }
 
 .icon:hover {
@@ -256,10 +285,16 @@ body {
     max-width: 100%;
   }
 
+  .anim-txt,
+  .subtitle {
+    white-space: normal;
+    animation: none;
+  }
+
   .text {
     width: 100%;
     line-height: 1.7;
-    padding: 40px;
+    padding: 20px;
   }
 
   .main-title {
