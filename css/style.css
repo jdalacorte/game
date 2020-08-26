@@ -13,10 +13,7 @@ html {
 }
 
 body {
-  background: url(https://mocah.org/uploads/posts/1070012-illustration-digital-art-video-games-pixel-art-planet-water-space-futuristic-stars-hills-astronaut-pixels-spaceship-fan-art-pixelated-No-Mans-Sky-universe-3d-object-scr.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url() center center/cover no-repeat fixed padding-box border-box #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +28,7 @@ body {
 
 .end-txt {
   margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.35rem;
@@ -94,6 +92,11 @@ body {
   font-size: 1rem;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+
+.bonus p {
+  margin-top: 15px;
+  line-height: 1.5;
 }
 
 /* main */

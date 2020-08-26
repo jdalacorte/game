@@ -48,8 +48,8 @@ const textNodes = [
   // HOME
   {
     id: 0,
-    text: 
-    `<div class="title">
+    text:
+      `<div class="title">
       <h1 class="main-title anim-txt">${gameName}<sub class="subline">demo</sub></h1>
       <h3 class="subtitle">Medo e delírio no Limiar da Galáxia</h3>
       <br>
@@ -72,8 +72,8 @@ const textNodes = [
   // CREDITS
   {
     id: 24,
-    text: 
-    `<div class="title">
+    text:
+      `<div class="title">
       <h1 class="credits-title animate__animated animate__lightSpeedInRight animate__fast">${gameName}<sub class="subline">demo</sub></h1>
     </div>
   <div class="credits">
@@ -102,7 +102,7 @@ const textNodes = [
   // SCENE 1
   {
     id: 1,
-    text: `<p class="txt animate__animated animate__fadeIn">Você acorda no chão de uma das cabines no banheiro do <span class="var">Mondrian's</span>, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um <span class="var">Líquido Roxo</span> que parece remédio para dor de barriga no seu bolso esquerdo.<span class="cursor-blink">|</span></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Você acorda no chão imundo de uma das cabines no banheiro do <span class="var">Mondrian's</span>, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um <span class="var">Líquido Roxo</span> que parece remédio para dor de barriga no seu bolso esquerdo.<span class="cursor-blink">|</span></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -113,17 +113,13 @@ const textNodes = [
         text: 'Investigar as <strong>outras cabines</strong>',
         nextText: 2,
       },
-      {
-        text: `Experimentar o <strong>Líquido Roxo</strong>`,
-        nextText: 21,
-      },
     ],
   },
 
   // SCENE 2
   {
     id: 2,
-    text: `<p class="txt animate__animated animate__fadeIn">Além de um maço de cigarros úmidos e um cadáver de rato espacial, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra um papel rasgado pela metade que parece ser uma prescrição médica. É possível ler apenas "<span class="var">Dra. Y.Suzuki</span>" e o código "<span class="var">Y2-SZK9</span>" - essa mesma sequência está anotada no frasco do Líquido Roxo.<span class="cursor-blink">|</span></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Além de um maço de cigarros úmidos e um rato espacial em decomposição, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra uma prescrição médica rasgada pela metade. É possível ler apenas "<span class="var">Dra. Y.Suzuki</span>" e o código "<span class="var">Y2-SZK9</span>" &mdash; essa mesma sequência está anotada no frasco do Líquido Roxo.<span class="cursor-blink">|</span></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -131,13 +127,17 @@ const textNodes = [
         setState: { clue1: true },
         nextText: 3,
       },
+      {
+        text: 'Experimentar o <strong>Líquido Roxo</strong>',
+        nextText: 21,
+      },
     ],
   },
 
   // SCENE 3
   {
     id: 3,
-    text: `<p class="txt animate__animated animate__fadeIn">Por baixo da porta de entrada é possível ver os primeiros raios do <span class="var">Segundo Sol</span> indicando que você já perdeu a manhã toda. No balcão, o Velho Barman te observa com indiferença enquanto fecha um de seus cigarros fedorentos.<span class="cursor-blink">|</span></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Por baixo da porta de entrada você vê os primeiros raios do <span class="var">Sol #2</span> invadindo o ambiente, indicando que você já metade do dia. No balcão, o Velho Barman te ignora enquanto enrola um de seus cigarros fedorentos e assiste um noticiário qualquer falando sobre a <span class="var">Guerra Iminente</span>.<span class="cursor-blink">|</span></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -145,7 +145,7 @@ const textNodes = [
         nextText: 6,
       },
       {
-        text: `Perguntar o que ele sabe sobre A Substância <strong>Y2-SZK9</strong>`,
+        text: 'Perguntar o que ele sabe sobre A Substância <strong>Y2-SZK9</strong>',
         nextText: 4,
         requiredState: (currentState) => currentState.clue1,
       },
@@ -159,7 +159,7 @@ const textNodes = [
   // SCENE 4 (transition)
   {
     id: 4,
-    text: `<p class="txt animate__animated animate__fadeIn">Uma das vantagens de ser um Local no Mondrian's é que você sabe que o Velho Barman antes de passar suas horas resmungando atrás do balcão empoeirado também foi um Trambiqueiro Espacial como você e pode ajudar a desvendar esse pequeno mistério ressaquento.<span class="cursor-blink">|</sspan></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Uma das vantagens de ser Local no Mondrian's é que você sabe que antes de passar suas horas resmungando atrás do balcão empoeirado, o Velho Barman também praticou <span class="var">Trambiques Espaciais</span>. Talvez ele possa ajudar a desvendar esse pequeno mistério ressaquento.<span class="cursor-blink">|</sspan></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -172,7 +172,7 @@ const textNodes = [
   // SCENE 5
   {
     id: 5,
-    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">Y2-SZK9</span> não é produzida há mais de 300 anos e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico - uma forma de viagem no tempo. Suas propriedades são desconhecidas já que sua "criadora", a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição instantaneamente e pede para ver A Substância mais de perto.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">Y2-SZK9</span> não é produzida há mais de 300 anos, antes dos rumores sobre A Guerra iminente, e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico &mdash; uma espécie de Viagem no Tempo. Suas propriedades são desconhecidas já que sua principal pesquisadora, a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição repentinamente e pede para ver A Substância mais de perto, as luzes do bar começam a piscar bizarramente.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -180,11 +180,11 @@ const textNodes = [
         nextText: 7,
       },
       {
-        text: `Entregar <strong>A Substância</strong> ao Velho Kroptiliano`,
+        text: 'Entregar <strong>A Substância</strong> ao Velho Kroptiliano',
         nextText: 22,
       },
       {
-        text: `Perguntar sobre a <strong>Dra. Y.Suzuki</strong>`,
+        text: 'Perguntar sobre a <strong>Dra. Y.Suzuki</strong>',
         nextText: 6,
       },
     ],
@@ -203,14 +203,14 @@ const textNodes = [
     ],
   },
 
-  // SCENE 7 (carro)
+  // SCENE 7 (vehicle)
   {
     id: 7,
-    text: `<p class="txt animate__animated animate__fadeIn">Sem seus óculos escuros você leva alguns segundos para conseguir adaptar a visão ao dia e achar seu <span class="var">Turbo 4-BK20</span> estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Sem seus óculos anti-UV você leva alguns segundos para conseguir adaptar a visão ao dia ofuscante do Planeta Kroptil. Você encontra sua <span class="var">Turbo 4-BK20</span> estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: `Procurar algo para <strong>quebrar o vidro</strong> do Turbo 4-BK20`,
+        text: 'Procurar algo para <strong>quebrar o bio-vidro</strong> da Turbo 4-BK20',
         setState: { spaceShip: true },
         nextText: 8,
       },
@@ -229,20 +229,20 @@ const textNodes = [
   },
   // no return
 
-  // SCENE 8 (ouvir / ignorar msg)
+  // SCENE 8 (message igore / read)
   {
     id: 8,
-    text: `<p class="txt animate__animated animate__fadeIn">O vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor nuclear ruge e seu Turbo 4-BK20 está pronto para um <span class="var">Salto Sônico</span>. O ícone de mensagem recebida no monitor chama sua atenção.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O bio-vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor neo-nuclear ruge e a Turbo 4-BK20 está pronta para um <span class="var">Salto Sônico</span>. O ícone de mensagem recebida no monitor chama sua atenção.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Abrir</strong> a mensagem',
+        text: '<strong>Checar</strong> a mensagem',
         setState: { readMessage: true },
         nextText: 9,
       },
       {
         text:
-          '<strong>Ignorar</strong> a mensagem e ir para casa curar a ressaca',
+          '<strong>Ignorar</strong> a mensagem e ir direto para casa',
         setState: { taxi: true },
         nextText: 10,
       },
@@ -250,10 +250,10 @@ const textNodes = [
   },
   // no return
 
-  // SCENE 9 (mensagem)
+  // SCENE 9 (message)
   {
     id: 9,
-    text: `<p class="txt animate__animated animate__fadeIn">O rosto que aparece no telecomunicador é e não é familiar. Uma espécie de <em>déjà vu</em>. Você ouve atentamente a mensagem: A <span class="var">Dra. Y.Suzuki</span> se apresenta e avisa que você &mdash; seja lá quem for que estiver em posse d'A Substância &mdash; corre perigo e que forças sinistras estão atrás d'A Substância que pode alterar o curso da vida na Galáxia. Ela pede para que você salte imediatamente para <span class="var">Kluster-89</span> e mostra um papel com as coordenadas.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O rosto que aparece no telecomunicador é e não é familiar. Uma espécie de <em>déjà vu</em> estranho. Você ouve atentamente a mensagem: Uma sombra que se identifica como sendo a <span class="var">Dra. Y.Suzuki</span> avisa com tom sinistro que você &mdash; seja lá quem for que estiver em posse d'A Substância &mdash; corre perigo e que Forças Obscuras estão atrás d'A Substância que pode alterar o curso da vida na Galáxia. Ela pede para que você salte imediatamente para <span class="var">Kluster-89</span> e mostra as coordenadas.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -277,11 +277,11 @@ const textNodes = [
   {
     id: 10,
     text:
-      `<p class="txt animate__animated animate__fadeIn">Ao chegar em casa você se depara com a <span class="var">porta arrombada e suas coisas reviradas</span>. Alguém está atrás de você, e você não faz ideia do que está acontecendo.<span class="cursor-blink">|</strong></p>`,
+      `<p class="txt animate__animated animate__fadeIn">Ao chegar no seu cubículo flutuante você se depara com a <span class="var">porta pulverizada e seus objetos espalhados por todos os lados</span>. Alguém ou algo está na sua cola e você não faz ideia do que está acontecendo.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: `Seguir as instruções e saltar para <strong>Kluster-89</strong>`,
+        text: 'Seguir as instruções da Dra. e saltar para <strong>Kluster-89</strong>',
         requiredState: (currentState) => currentState.readMessage,
         nextText: 12,
       },
@@ -290,7 +290,7 @@ const textNodes = [
         nextText: 21,
       },
       {
-        text: `Checar sua <strong>caixa de mensagens</strong>`,
+        text: 'Checar sua <strong>caixa de mensagens</strong>',
         requiredState: (currentState) => currentState.taxi,
         setState: { readMessage: false },
         nextText: 9,
@@ -298,23 +298,27 @@ const textNodes = [
     ],
   },
 
-  // SCENE 11 (google)
+  // SCENE 11 (search)
   {
     id: 11,
-    text: `<p class="txt animate__animated animate__fadeIn">Há cerca de 300 anos a Dra. Y.Suzuki integrou um grupo de pesquisas na <span class="var">Universidade Monolítica da Galáxia</span>. Seu objeto de estudo era o funcionamento do cérebro humano e sua percepção da realidade. A Dra. anunciou que havia feito uma descoberta inimaginável com potencial para alterar o curso da história. No dia do anúncio, no entanto, o laboratório explodiu. Nenhum corpo foi encontrado, e os registros da pesquisa se perderam. Desde então frascos com A Substância descoberta são encontrados em determinados períodos no tempo e em locais improváveis no Universo.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Há cerca de 350 anos a Dra. Youko Suzuki integrou um grupo de pesquisas na <span class="var">Universidade Monolítica da Galáxia</span>. O objeto de estudo era o funcionamento do cérebro das espécies conhecidas da Galáxia e sua percepção da realidade. A Dra. Suzuki publicou em seu diário virtual que havia feito uma descoberta inimaginável com potencial para alterar o curso da história do Universo. No dia do anúncio oficial, no entanto, o laboratório explodiu misteriosamente. Nenhum corpo foi encontrado, e os registros da pesquisa que não se perderam na explosão foram destruídos pelas forças policiais. Desde então frascos com A Substância descoberta são encontrados em determinados períodos no tempo e em locais improváveis do Universo.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: `Saltar para <span class="var">Kluster-89</span>`,
+        text: 'Saltar para <strong>Kluster-89</strong>',
         nextText: 12,
       },
+      {
+        text: '<strong>Misturar</strong> A Substância com seu fumo Kroptiliano',
+        nextText: 22,
+      }
     ],
   },
 
   // SCENE 12 (transition)
   {
     id: 12,
-    text: `<p class="txt animate__animated animate__fadeIn">Com o cansaço de não saber onde se meteu e a sede por respostas você decide que é hora de descobrir o que está acontecendo. O <span class="var">bio-vidro</span> do Turbo 4-BK20 completou seu autorreparo e você está pronto para o salto.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Com a ressaca de uma noite no Mondrian's e o cansaço de não saber onde se meteu você decide que é hora de descobrir o que está acontecendo. O <span class="var">bio-vidro</span> da Turbo 4-BK20 completou seu autorreparo e está pronta para o Salto Sônico.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -327,7 +331,7 @@ const textNodes = [
   // SCENE 13
   {
     id: 13,
-    text: `<p class="txt animate__animated animate__fadeIn">Após anos luz de distância serem comprimidos em míseros segundos de existência você chega à <span class="var">Kluster-89</span>, ou o que sobrou dele. Ainda com a náusea causada pelo salto, você se encontra no meio do que parece ter sido uma praça, agora tomada pela densa selva tropical que cobre o planeta. Prédios enormes por todos os lados. De algum ponto no centro da praça emana uma <span class="var">Névoa Roxa</span>, com a mesma tonalidade d'A Substância no frasco. À sua esquerda, de frente para o centro da praça, um bar em pleno funcionamento.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Após alguns anos luz de distância serem comprimidos em míseros segundos de existência você chega em <span class="var">Kluster-89</span>, ou o que sobrou dele. Ainda com a náusea causada pelo salto, você se encontra no meio do que parece ter sido uma praça, agora tomada pela densa selva tropical que cobre o planeta. Enormes prédios verdes por todos os lados. De algum ponto no centro da praça emana uma <span class="var">Névoa Roxa</span>, com a mesma tonalidade d'A Substância no frasco. À sua esquerda, de frente para o centro da praça, um Bar em pleno funcionamento.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -340,7 +344,7 @@ const textNodes = [
         nextText: 16,
       },
       {
-        text: `Acender um bom e velho <strong>cigarro Kroptiliano</strong> para curar o enjôo`,
+        text: 'Acender um bom e velho <strong>cigarro Kroptiliano</strong> para curar o enjôo',
         nextText: 14,
       },
     ],
@@ -349,7 +353,7 @@ const textNodes = [
   // SCENE 14
   {
     id: 14,
-    text: `<p class="txt animate__animated animate__fadeIn">Você se encosta no Turbo 4-BK20 e começa a fechar seu cigarro Kroptiliano enquanto observa o movimento de <em>entra-e-sai</em> no Bar envolto em <span class="var">Névoa Roxa</span>. Impressionante como algumas formas de socialização permanecem e sobrevivem até mesmo após a queda total da civilização. O enjôo desaparece como mágica depois de duas tragadas.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Você se encosta na Turbo 4-BK20 e começa a enrolar seu cigarro Kroptiliano enquanto observa o movimento de <em>entra-e-sai</em> no Bar envolto em <span class="var">Névoa Púrpura</span>. Impressionante como algumas formas de socialização permanecem e sobrevivem até mesmo após a queda total da civilização e a ameaça de uma Guerra Iminente por toda a Galáxia. O enjôo desaparece como mágica depois de duas tragadas.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -367,7 +371,7 @@ const textNodes = [
   // SCENE 15
   {
     id: 15,
-    text: `<p class="txt animate__animated animate__fadeIn">A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico até o Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se assemelha muito com <span class="var">A Substância</span>, sua entrada no bar é totalmente ignorada. Além da densa fumaça de cigarros, um tom arroxeado no ar chama sua a atenção pela semelhança com a cor d'A Substância.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico ao Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se parece com <span class="var">A Substância</span>, sua entrada no bar é totalmente ignorada. Além da densa fumaça de cigarros, um tom arroxeado no ar chama sua a atenção pela semelhança com a cor d'A Substância.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -391,7 +395,7 @@ const textNodes = [
   {
     id: 16,
     text:
-      '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa clareira no centro da praça. De um buraco na terra um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua presença não foi percebida.<span class="cursor-blink">|</strong></p>',
+      '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa parte mais elevada perto do centro da praça. Adiante, de um buraco na terra, um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua presença não foi percebida.<span class="cursor-blink">|</strong></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -407,7 +411,7 @@ const textNodes = [
       },
       {
         text:
-          '<strong>Atacar</strong> a Figura Enigmática aproveitando o fator surpresa',
+          '<strong>Atacar</strong> a Figura Enigmática aproveitando-se do fator surpresa',
         nextText: 19,
       },
     ],
@@ -416,7 +420,7 @@ const textNodes = [
   // SCENE 17
   {
     id: 17,
-    text: `<p class="txt animate__animated animate__fadeIn">O barman, que parece uma versão alienígena do Velho Barman fica visivelmente desconfortável com a pergunta: <span class="var">"Eu não sei de nada! É melhor você dar o fora e cuidar da sua VIDA!"</span><span class="cursor-blink">|</strong></p>`,
+    text: '<p class="txt animate__animated animate__fadeIn">O Barman, que parece uma versão alienígena do Velho Barman fica visivelmente desconfortável com a pergunta: <span class="var">"Eu não sei de nada! É melhor você dar o fora e cuidar da sua VIDA!"</span><span class="cursor-blink">|</strong></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -425,8 +429,8 @@ const textNodes = [
         nextText: 16,
       },
       {
-        text: 'Pedir uma dose da <strong>Bebida</strong>',
-        nextText: 21,
+        text: 'Pedir uma dose da <strong>Bebida</strong> mesmo assim',
+        nextText: 22,
       },
     ],
   },
@@ -434,7 +438,7 @@ const textNodes = [
   // SCENE 18 (transition)
   {
     id: 18,
-    text: `<p class="txt animate__animated animate__fadeIn">Se esgueirando por entre os escombros cheios de limo da antiga praça você tenta uma aproximação. A Figura Enigmática tem algo em suas mãos &mdash; um frasco igual ao seu. Investigando com mais atenção você percebe se tratar da <span class="var">Dra. Y.Suzuki</span>. Ela percebe sua presença.<span class="cursor-blink">|</strong></p>`,
+    text: '<p class="txt animate__animated animate__fadeIn">Se esgueirando por entre os escombros cheios de limo da antiga praça você tenta uma aproximação. A Figura Enigmática tem algo em suas mãos &mdash; um frasco igual ao seu. Investigando com mais atenção você percebe se tratar da <span class="var">Dra. Y.Suzuki</span>. Ela percebe sua presença.<span class="cursor-blink">|</strong></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -447,7 +451,7 @@ const textNodes = [
   // SCENE 19
   {
     id: 19,
-    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki corre até você. Suas pupilas estão dilatadas, seus olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o universo. Nós descobrimos o caminho pra fora. Desde então eu tenho percorrido o tempo tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">Y2-SZK9</span> que você trouxe até mim é um extrato de <span class="var"><em>Alternanthera Ficoidea</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal.”. A Doutora mostra o frasco que ela tem em suas mãos e você percebe que a substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância W7-DHJ5</span> age no organismo limitando o efeito da Explosão Sônica causada pela Y2-SZK9. Os dois devem ser usados juntos.". A Doutora mistura as duas substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki chega até você num caminhar flutuante. Suas pupilas estão totalmente dilatadas, os olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o Universo. Descobrimos o caminho pra Fora. Eu tenho percorrido o Tempo tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">Y2-SZK9</span> que você trouxe até mim é um extrato de <span class="var"><em>Alternanthera Ficoidea</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal. Eles não querem que isso seja do conhecimento de ninguém que julguem perigosos ou revolucionários aos olhos do Pseudo-Império. Desde os primeiros rumores sobre a Guerra Iminente, há 300 anos, todas as informações sobre As Substâncias têm sido apagadas da história.”. A Doutora mostra o frasco que ela tem em mãos e você percebe que a Substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância W7-DHJ5</span> age no organismo limitando o efeito da Explosão Sônica causada pela Y2-SZK9. As duas devem ser usadas juntas em doses exatamente iguais." Ela mistura as duas Substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -457,32 +461,6 @@ const textNodes = [
       {
         text: '<strong>Recusar</strong> a dose',
         nextText: 22,
-      },
-    ],
-  },
-
-  // NEUTRAL
-  {
-    id: 21,
-    text: `<p class="animate__animated animate__fadeIn fim">Você começa a ver cores que não existem e sente como se seu corpo não estivesse conectado com seus órgãos. A Galáxia é Você e Você é a Galáxia. <p class="var end-txt">Nada é verdadeiro, tudo é permitido.<span class="cursor-blink">|</strong></p></p>`,
-    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
-    options: [
-      {
-        text: '<strong>🌟 FIM 🌟</strong>',
-        nextText: 23,
-      },
-    ],
-  },
-
-  // BAD
-  {
-    id: 22,
-    text: '<p class="var end-txt">Game Over</p>',
-    img: '<img class="img" src="./img/ph.jpg" alt="" title="Daniel Hogrefe"/>',
-    options: [
-      {
-        text: '<strong>💥 FIM 💥</strong>',
-        nextText: 23,
       },
     ],
   },
@@ -500,14 +478,40 @@ const textNodes = [
     ],
   },
 
-  // BONUS
+  // NEUTRAL
   {
-    id: 23,
-    text: `${bonusScene}`,
+    id: 21,
+    text: `<p class="var end-txt">Game Over</p><p class="animate__animated animate__fadeIn">Você começa a ver cores que não existem e sente como se seu corpo não estivesse conectado com seus órgãos. A Galáxia é Você e Você é a Galáxia. <p class="var end-txt">Nada é verdadeiro, tudo é permitido.<span class="cursor-blink">|</strong></p></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Obrigado por jogar 👾',
+        text: '<strong>🌟 Recomeçar 🌟</strong>',
+        nextText: 1,
+      },
+    ],
+  },
+
+  // BAD
+  {
+    id: 22,
+    text: '<p class="var end-txt">Game Over</p><p class="animate__animated animate__fadeIn">De repente, no horizonte, um clarão ofuscante precede uma onda de Vapor Púrpura que corrói instantaneamente o metal, a carne, os ossos e destroi os átomos de tudo que encontra pela frente. Você descobre tarde demais que os rumores sobre a Guerra Iminente eram reais. <p class="var end-txt">A Bomba finalmente explodiu.<span class="cursor-blink">|</strong></p></p>',
+    img: '<img class="img" src="./img/ph.jpg" alt="" title="Daniel Hogrefe"/>',
+    options: [
+      {
+        text: '<strong>💥 Recomeçar 💥</strong>',
+        nextText: 1,
+      },
+    ],
+  },
+
+  // BONUS
+  {
+    id: 23,
+    text: `<div class="bonus"><p class="var anim-txt end-txt">Obrigado por jogar!</p><p class="animate__animated animate__fadeIn">Você pode fazer o <span class="var">download grátis</span> do mini-álbum completo com a trilha sonora composta especialmente para o jogo aqui: <a class="links" href="#" target="_blank">** LINK PRO BANDCAMP WHATEVER **</a> .</p><p class="animate__animated animate__fadeIn">Essa pequena aventura espacial foi idealizada por Jonas Dalacorte e Daniel Hogrefe no segundo semestre de 2020 em Porto Alegre, RS.</p><p class="animate__animated animate__fadeIn">É uma espécie de homenagem ou indicação simplória aos temas clássicos de ficção científica que gostamos e temos como influência estética.</p><p class="animate__animated animate__fadeIn">Se você quiser conversar sobre qualquer tema relacionado (ou não) ao jogo, faça contato por: <a class="links" href="email@yonsounds.com" target="_blank">email@yonsounds.com</a></p></div>`,
+    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
+    options: [
+      {
+        text: 'Voltar 👾',
         nextText: -1,
       },
     ],
