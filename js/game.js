@@ -103,7 +103,7 @@ const textNodes = [
   {
     id: 1,
     text: `<p class="txt animate__animated animate__fadeIn">Você acorda no chão imundo de uma das cabines no banheiro do <span class="var">Mondrian's</span>, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um <span class="var">Líquido Roxo</span> que parece remédio para dor de barriga no seu bolso esquerdo.<span class="cursor-blink">|</span></p>`,
-    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
+    img: '<img class="img" src="./img/bg.jpeg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
         text: '<strong>Sair</strong> do banheiro',
