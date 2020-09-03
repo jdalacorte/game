@@ -137,7 +137,7 @@ const textNodes = [
   // SCENE 3
   {
     id: 3,
-    text: `<p class="txt animate__animated animate__fadeIn">Por baixo da porta de entrada você vê os primeiros raios do <span class="var">Sol #2</span> invadindo o ambiente, indicando que você já metade do dia. No balcão, o Velho Barman te ignora enquanto enrola um de seus cigarros fedorentos e assiste um noticiário qualquer falando sobre a <span class="var">Guerra Iminente</span>.<span class="cursor-blink">|</span></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Por baixo da porta de entrada você vê os primeiros raios do <span class="var">Sol #2</span> invadindo o ambiente, indicando que você já perdeu metade do dia. No balcão, o Velho Barman te ignora enquanto enrola um de seus cigarros fedorentos e assiste a um noticiário qualquer falando sobre a <span class="var">Guerra Iminente</span>.<span class="cursor-blink">|</span></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -172,7 +172,7 @@ const textNodes = [
   // SCENE 5
   {
     id: 5,
-    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">Y2-SZK9</span> não é produzida há mais de 300 anos, antes dos rumores sobre A Guerra iminente, e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico &mdash; uma espécie de Viagem no Tempo. Suas propriedades são desconhecidas já que sua principal pesquisadora, a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição repentinamente e pede para ver A Substância mais de perto, as luzes do bar começam a piscar bizarramente.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">Y2-SZK9</span> não é produzida há mais de 300 anos, antes dos rumores sobre A Guerra Iminente, e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico &mdash; uma espécie de Viagem no Tempo. Suas propriedades são desconhecidas já que sua principal pesquisadora, a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição repentinamente e pede para ver A Substância mais de perto, as luzes do bar começam a piscar bizarramente.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -206,7 +206,7 @@ const textNodes = [
   // SCENE 7 (vehicle)
   {
     id: 7,
-    text: `<p class="txt animate__animated animate__fadeIn">Sem seus óculos anti-UV você leva alguns segundos para conseguir adaptar a visão ao dia ofuscante do Planeta Kroptil. Você encontra sua <span class="var">Turbo 4-BK20</span> estacionado há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Sem seus óculos anti-UV você leva alguns segundos para conseguir adaptar a visão ao dia ofuscante do Planeta Kroptil. Você encontra sua <span class="var">Turbo 4-BK20</span> estacionada há alguns metros do Bar. A chave não está no seu bolso... ainda está na ignição. Aparentemente a noite passada começou mais cedo do que você lembra.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -232,7 +232,7 @@ const textNodes = [
   // SCENE 8 (message igore / read)
   {
     id: 8,
-    text: `<p class="txt animate__animated animate__fadeIn">O bio-vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe você salta para dentro e gira a chave na ignição, o motor neo-nuclear ruge e a Turbo 4-BK20 está pronta para um <span class="var">Salto Sônico</span>. O ícone de mensagem recebida no monitor chama sua atenção.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O bio-vidro se espatifa em milhares de pedaços reluzentes com o impacto. Antes que o alarme soe e o plasma temporário seja ativado, você salta para dentro e gira a chave na ignição, o motor neo-nuclear ruge e a Turbo 4-BK20 está pronta para um <span class="var">Salto Sônico</span>. O ícone de mensagem recebida no monitor chama sua atenção.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -318,7 +318,7 @@ const textNodes = [
   // SCENE 12 (transition)
   {
     id: 12,
-    text: `<p class="txt animate__animated animate__fadeIn">Com a ressaca de uma noite no Mondrian's e o cansaço de não saber onde se meteu você decide que é hora de descobrir o que está acontecendo. O <span class="var">bio-vidro</span> da Turbo 4-BK20 completou seu autorreparo e está pronta para o Salto Sônico.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Com a ressaca de uma noite no Mondrian's e o cansaço de não saber onde se meteu você decide que é hora de descobrir o que está acontecendo. O <span class="var">bio-vidro</span> da Turbo 4-BK20 completou seu autorreparo e está pronta para um Salto Sônico mais longo.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -371,7 +371,7 @@ const textNodes = [
   // SCENE 15
   {
     id: 15,
-    text: `<p class="txt animate__animated animate__fadeIn">A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico ao Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se parece com <span class="var">A Substância</span>, sua entrada no bar é totalmente ignorada. Além da densa fumaça de cigarros, um tom arroxeado no ar chama sua a atenção pela semelhança com a cor d'A Substância.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A mesma cena em todos os cantos do Universo Conhecido, do Centro Cósmico ao Limiar da Galáxia: O Bar de Fim de Noite. Como numa cena de algum <em>spaghetti western futurista</em>, alienígenas e humanos fedorentos se aglomeram no balcão e em volta das mesas bebendo em taças e canecas um líquido que se parece com <span class="var">A Substância</span>. Sua entrada no bar é totalmente ignorada. Além da densa fumaça de cigarros, um tom arroxeado no ar chama sua a atenção pela semelhança com a cor d'A Substância.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -395,7 +395,7 @@ const textNodes = [
   {
     id: 16,
     text:
-      '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa parte mais elevada perto do centro da praça. Adiante, de um buraco na terra, um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua presença não foi percebida.<span class="cursor-blink">|</strong></p>',
+      '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa parte mais elevada perto do centro da praça. Adiante, de um buraco na terra, um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua movimentação é imperceptível.<span class="cursor-blink">|</strong></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
