@@ -15,11 +15,16 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerHTML = textNode.text;
+  if (textNodeIndex === 22) {
+    textElement.style.visibility = "hidden";
+  }
   imageElement.innerHTML = textNode.img;
+  if (textNodeIndex === 22) {
+    imageElement.style.visibility = "hidden";
+  }
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
-
   textNode.options.forEach((option) => {
     if (showOption(option)) {
       const button = document.createElement('button');
@@ -494,7 +499,7 @@ const textNodes = [
   // BAD
   {
     id: 22,
-    text: '<p class="var end-txt">Game Over</p><p class="animate__animated animate__fadeIn">De repente, no horizonte, um clarão ofuscante precede uma onda de Vapor Púrpura que corrói instantaneamente o metal, a carne, os ossos e destroi os átomos de tudo que encontra pela frente. Você descobre tarde demais que os rumores sobre a Guerra Iminente eram reais. <p class="var end-txt">A Bomba finalmente explodiu.<span class="cursor-blink">|</strong></p></p>',
+    text: '<p class="var bad-end"></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="" title="Daniel Hogrefe"/>',
     options: [
       {
