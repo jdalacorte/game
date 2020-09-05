@@ -17,10 +17,14 @@ function showTextNode(textNodeIndex) {
   textElement.innerHTML = textNode.text;
   if (textNodeIndex === 22) {
     textElement.style.visibility = "hidden";
+  } else {
+    textElement.style.visibility = "visible";
   }
   imageElement.innerHTML = textNode.img;
   if (textNodeIndex === 22) {
     imageElement.style.visibility = "hidden";
+  } else {
+    imageElement.style.visibility = "visible";
   }
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
