@@ -1,4 +1,4 @@
-const gameName = 'G4-NJ4';
+const gameName = '***';
 const bonusScene = ``;
 
 const imageElement = document.getElementById('img');
@@ -128,7 +128,7 @@ const textNodes = [
   // SCENE 2
   {
     id: 2,
-    text: `<p class="txt animate__animated animate__fadeIn">Além de um maço de cigarros úmidos e um rato espacial em decomposição, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra uma prescrição médica rasgada pela metade. É possível ler apenas "<span class="var">Dra. Y.Suzuki</span>" e o código "<span class="var">G4-NJ4</span>" &mdash; essa mesma sequência está anotada no frasco do Líquido Roxo.<span class="cursor-blink">|</span></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Além de um maço de cigarros úmidos e um rato espacial em decomposição, nada de útil na cabine da direita. Na cabine à sua esquerda você encontra uma prescrição médica rasgada pela metade. É possível ler apenas "<span class="var">Dra. Y.Suzuki</span>" e o código "<span class="var">***</span>" &mdash; essa mesma sequência está anotada no frasco do Líquido Roxo.<span class="cursor-blink">|</span></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -154,7 +154,7 @@ const textNodes = [
         nextText: 6,
       },
       {
-        text: 'Perguntar o que ele sabe sobre A Substância <strong>G4-NJ4</strong>',
+        text: 'Perguntar o que ele sabe sobre A Substância <strong>***</strong>',
         nextText: 4,
         requiredState: (currentState) => currentState.clue1,
       },
@@ -181,7 +181,7 @@ const textNodes = [
   // SCENE 5
   {
     id: 5,
-    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">G4-NJ4</span> não é produzida há mais de 300 anos, antes dos rumores sobre A Guerra Iminente, e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico &mdash; uma espécie de Viagem no Tempo. Suas propriedades são desconhecidas já que sua principal pesquisadora, a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição repentinamente e pede para ver A Substância mais de perto, as luzes do bar começam a piscar bizarramente.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">O Velho Barman explica que A Substância <span class="var">***</span> não é produzida há mais de 300 anos, antes dos rumores sobre A Guerra Iminente, e que provavelmente esse frasco veio parar nesse exato buraco no Limiar da Galáxia por meio de Contrabando Sônico &mdash; uma espécie de Viagem no Tempo. Suas propriedades são desconhecidas já que sua principal pesquisadora, a <span class="var">Dra. Y.Suzuki</span>, desapareceu logo após a descoberta. Ele muda de feição repentinamente e pede para ver A Substância mais de perto, as luzes do bar começam a piscar bizarramente.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
@@ -460,7 +460,7 @@ const textNodes = [
   // SCENE 19
   {
     id: 19,
-    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki chega até você num caminhar flutuante. Suas pupilas estão totalmente dilatadas, os olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o Universo. Descobrimos o caminho pra Fora. Eu tenho percorrido o Tempo tentando encontrar um jeito de reunir minhas descobertas. A <span class="var">G4-NJ4</span> que você trouxe até mim é um extrato de <span class="var"><em>Lophophora williamsii</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal. Eles não querem que isso seja do conhecimento de ninguém que julguem perigosos ou revolucionários aos olhos do Pseudo-Império. Desde os primeiros rumores sobre a Guerra Iminente, há 300 anos, todas as informações sobre As Substâncias têm sido apagadas da história.”. A Doutora mostra o frasco que ela tem em mãos e você percebe que a Substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância H5-MK5</span> age no organismo limitando o efeito da Explosão Sônica causada pela G4-NJ4. As duas devem ser usadas juntas em doses exatamente iguais." Ela mistura as duas Substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki chega até você num caminhar flutuante. Suas pupilas estão totalmente dilatadas, os olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o Universo. Descobrimos o caminho pra Fora. Eu tenho percorrido o Tempo tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">***</span> que você trouxe até mim é um extrato de <span class="var"><em>Lophophora williamsii</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal. Eles não querem que isso seja do conhecimento de ninguém que julguem perigosos ou revolucionários aos olhos do Pseudo-Império. Desde os primeiros rumores sobre a Guerra Iminente, há 300 anos, todas as informações sobre As Substâncias têm sido apagadas da história.”. A Doutora mostra o frasco que ela tem em mãos e você percebe que a Substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância H5-MK5</span> age no organismo limitando o efeito da Explosão Sônica causada pela ***. As duas devem ser usadas juntas em doses exatamente iguais." Ela mistura as duas Substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
