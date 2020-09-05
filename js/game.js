@@ -9,7 +9,7 @@ let state = {};
 
 function startGame() {
   state = {};
-  showTextNode(0);
+  showTextNode(19);
 }
 
 function showTextNode(textNodeIndex) {
@@ -56,7 +56,7 @@ const textNodes = [
       <p class="line animate__animated animate__slideInUp animate__faster">Criado por Daniel Hogrefe & Jonas Dalacorte</p>
     </div>`,
     img:
-      '<img class="img" src="../img/bg.jpeg" alt="copyright Daniel Hogrefe" />',
+      '<img class="img" src="./img/bg.jpeg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
         text: '<strong>Jogar ✨</strong>',
