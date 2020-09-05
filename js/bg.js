@@ -6,6 +6,8 @@ $(document).ready(function () {
 });
 
 // play audio
+
+
 const button = document.getElementById('button');
 const audio = document.getElementById('player');
 
@@ -14,6 +16,15 @@ button.addEventListener('click', function () {
     audio.play();
   } else {
     audio.pause();
+  }
+});
+
+const audioFile = audio;
+audioFile.addEventListener('timeupdate', function () {
+  let buffer = .13
+  if (this.currentTime > this.duration - buffer) {
+    this.currentTime = 0
+    this.play()
   }
 });
 

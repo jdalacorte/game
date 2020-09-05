@@ -9,7 +9,7 @@ let state = {};
 
 function startGame() {
   state = {};
-  showTextNode(0);
+  showTextNode(19);
 }
 
 function showTextNode(textNodeIndex) {
@@ -17,6 +17,7 @@ function showTextNode(textNodeIndex) {
   textElement.innerHTML = textNode.text;
   if (textNodeIndex === 22) {
     textElement.style.visibility = "hidden";
+    document.body.style.backgroundImage = "url('../img/bg.jpeg')";
   } else {
     textElement.style.visibility = "visible";
   }

@@ -104,6 +104,26 @@ body {
   line-height: 1.5;
 }
 
+.reset {
+  padding: 3px;
+  color: lightgreen;
+  text-decoration: none;
+  border: 1px solid plum;
+  border-radius: 3px;
+  background-color: purple;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset:hover {
+  color: purple;
+  background-color: lightgreen;
+}
+
+.reset:active {
+  position: relative;
+  top: 1px;
+}
+
 /* main */
 .title {
   text-align: center;
@@ -140,7 +160,7 @@ body {
 }
 
 /* lang */
-.lang-select {
+/* .lang-select {
   color: crimson;
 }
 
@@ -161,7 +181,7 @@ body {
 .lang-link:visited {
   text-decoration: none;
   color: crimson;
-}
+} */
 
 /* typer */
 .anim-txt {
@@ -243,25 +263,27 @@ body {
 /* footer */
 .footer {
   position: fixed;
+  align-items: center;
   bottom: 25px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: crimson;
   font-weight: bold;
   right: 25px;
+  text-align: center;
 }
 
 .ver {
-  color: rgb(221, 62, 94);
+  color: lightgreen;
 }
 
 /* soundtrack */
 .soundtrack {
-  left: 25px;
+  left: 15px;
   width: 150px;
 }
 
 .icon {
-  color: crimson;
+  color: lightgreen;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   margin-right: 15px;
@@ -278,6 +300,10 @@ body {
 
 /* queries */
 @media only screen and (max-width: 768px) {
+  .soundtrack {
+    left: 0;
+  }
+
   .container {
     margin: 0 auto 70px;
     padding: 10px;
