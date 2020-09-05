@@ -17,7 +17,7 @@ function showTextNode(textNodeIndex) {
   textElement.innerHTML = textNode.text;
   if (textNodeIndex === 22) {
     textElement.style.visibility = "hidden";
-    document.body.style.backgroundImage = "url('../img/bg.jpeg')";
+    document.body.style.backgroundImage = "url('./img/bg.jpeg')";
   } else {
     textElement.style.visibility = "visible";
   }
