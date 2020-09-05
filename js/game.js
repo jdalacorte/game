@@ -503,14 +503,6 @@ const textNodes = [
   // BAD
   {
     id: 22,
-    text: '<p class="var bad-end"></p>',
-    img: '<img class="img" src="./img/ph.jpg" alt="" title="Daniel Hogrefe"/>',
-    options: [
-      {
-        text: '<strong>💥 Recomeçar 💥</strong>',
-        nextText: 1,
-      },
-    ],
   },
 
   // BONUS

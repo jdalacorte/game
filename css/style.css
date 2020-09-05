@@ -216,7 +216,6 @@ body {
 
 .btn:hover {
   position: relative;
-  top: 1px;
   box-shadow: 2px 2px 0 #111;
   color: #eee;
   background: crimson;
