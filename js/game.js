@@ -17,7 +17,7 @@ function showTextNode(textNodeIndex) {
   textElement.innerHTML = textNode.text;
   if (textNodeIndex === 22) {
     textElement.style.visibility = "hidden";
-    document.body.style.backgroundImage = "url('./img/bg.jpeg')";
+    document.body.style.backgroundImage = "url('./img/bg.jpg')";
   } else {
     textElement.style.visibility = "visible";
   }
@@ -461,7 +461,7 @@ const textNodes = [
   // SCENE 19
   {
     id: 19,
-    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki chega até você num caminhar flutuante. Suas pupilas estão totalmente dilatadas, os olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o Universo. Descobrimos o caminho pra Fora. Eu tenho percorrido o Tempo tentando encontrar um jeito de reunir minhas descobertas. O <span class="var">K*SMV5</span> que você trouxe até mim é um extrato de <span class="var"><em>Lophophora williamsii</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal. Eles não querem que isso seja do conhecimento de ninguém que julguem perigosos ou revolucionários aos olhos do Pseudo-Império. Desde os primeiros rumores sobre a Guerra Iminente, há 300 anos, todas as informações sobre As Substâncias têm sido apagadas da história.”. A Doutora mostra o frasco que ela tem em mãos e você percebe que a Substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância H5-MK5</span> age no organismo limitando o efeito da Explosão Sônica causada pela K*SMV5. As duas devem ser usadas juntas em doses exatamente iguais." Ela mistura as duas Substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">A Dr. Y.Suzuki chega até você num caminhar flutuante. Suas pupilas estão totalmente dilatadas, os olhos são como duas azeitonas inchadas: "É tudo uma simples simulação. Nós conseguimos quebrar o Universo. Descobrimos o caminho pra Fora. Eu tenho percorrido o Tempo tentando encontrar um jeito de reunir minhas descobertas. A <span class="var">K*SMV5</span> que você trouxe até mim é um extrato de <span class="var"><em>Lophophora williamsii</em></span>. Ele dissolve as amarras do programa. Libertando a mente. Mas é fatal. Eles não querem que isso seja do conhecimento de ninguém que julguem perigosos ou revolucionários aos olhos do Pseudo-Império. Desde os primeiros rumores sobre a Guerra Iminente, há 300 anos, todas as informações sobre As Substâncias têm sido apagadas da história.”. A Doutora mostra o frasco que ela tem em mãos e você percebe que a Substância tem uma cor levemente diferente. "Essa é minha outra descoberta: <span class="var">A Substância G4-NJ4</span> age no organismo limitando o efeito da Explosão Sônica causada pela K*SMV5. As duas devem ser usadas juntas em doses exatamente iguais." Ela mistura as duas Substâncias e oferece uma dose a você.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
