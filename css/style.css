@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  background: url(../img/bg.gif) center center/cover no-repeat fixed padding-box border-box #000;
+  background: url(../img/bg.gif) bottom center/cover no-repeat fixed padding-box
+    border-box #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +42,7 @@ body {
   max-width: 80%;
   padding: 10px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .img {
@@ -69,6 +70,10 @@ body {
   max-width: 768px;
   width: 90%;
   line-height: 1.5;
+}
+
+.line {
+  color: #999;
 }
 
 .text-null {
@@ -111,19 +116,15 @@ body {
   font-weight: bold;
 }
 
-.subline {
-  color: #649494;
-  font-size: 0.8rem;
-}
-
 .subtitle {
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 3px;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 2s steps(30, end) 2s;
+  animation: typing 2s steps(30, end) 1s;
   animation-fill-mode: both;
+  color: #649494;
 }
 
 .links {
