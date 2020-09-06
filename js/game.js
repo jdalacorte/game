@@ -98,6 +98,8 @@ const textNodes = [
     <h4 class="credits-title">Recursos:</h4>
     <p class="line"><a class="links" href="https://github.com/WebDevSimplified" target="_blank">Web Dev Simplified</a></p>
     <p class="line"><a class="links" href="https://animate.style/" target="_blank">Animate.css</a></p>
+    <p class="line"><a class="links" href="https://puredata.info/" target="_blank">Pure Data</a></p>
+    <p class="line"><a class="links" href="https://automatonism.com/" target="_blank">Automatonism</a></p>
   </div >`,
     img: '',
     options: [
