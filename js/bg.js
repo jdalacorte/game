@@ -1,7 +1,7 @@
 // play buttons
 $(document).ready(function () {
-  $('i').click(function () {
-    $('i').toggleClass('fas fa-volume-up fa-2x fas fa-volume-mute fa-2x');
+  $('#button').click(function () {
+    $('#button').toggleClass('fas fa-volume-up fa-2x fas fa-volume-mute fa-2x');
   });
 });
 

@@ -104,24 +104,8 @@ body {
   line-height: 1.5;
 }
 
-.reset {
-  padding: 3px;
-  color: lightgreen;
-  text-decoration: none;
-  border: 1px solid plum;
-  border-radius: 3px;
-  background-color: purple;
-  transition: all 0.2s ease-in-out;
-}
-
-.reset:hover {
-  color: purple;
-  background-color: lightgreen;
-}
-
-.reset:active {
-  position: relative;
-  top: 1px;
+.fa-undo {
+  font-size: 1rem;
 }
 
 /* main */
@@ -265,15 +249,15 @@ body {
   position: fixed;
   align-items: center;
   bottom: 25px;
-  font-size: 0.7rem;
   color: crimson;
   font-weight: bold;
   right: 25px;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .ver {
-  color: lightgreen;
+  color: hsla(120, 73%, 75%, 0.5);
 }
 
 /* soundtrack */

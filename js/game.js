@@ -9,7 +9,7 @@ let state = {};
 
 function startGame() {
   state = {};
-  showTextNode(19);
+  showTextNode(0);
 }
 
 function showTextNode(textNodeIndex) {
