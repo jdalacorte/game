@@ -1,5 +1,4 @@
 const gameName = 'K*SMV5 2126';
-const bonusScene = ``;
 
 const imageElement = document.getElementById('img');
 const textElement = document.getElementById('text');
