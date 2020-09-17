@@ -8,23 +8,20 @@ let state = {};
 
 function startGame() {
   state = {};
-  showTextNode(0);
+  showTextNode(1);
 }
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerHTML = textNode.text;
+  imageElement.innerHTML = textNode.img;
   if (textNodeIndex === 22) {
     textElement.style.visibility = "hidden";
+    imageElement.style.visibility = "hidden";
     document.body.style.backgroundImage = "url('./img/bg-2.jpg')";
   } else {
     textElement.style.visibility = "visible";
-  }
-  imageElement.innerHTML = textNode.img;
-  if (textNodeIndex === 22) {
-    imageElement.style.visibility = "hidden";
-  } else {
-    imageElement.style.visibility = "visible";
+    imageElement.style.visibility = "visible"
   }
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
@@ -113,15 +110,15 @@ const textNodes = [
   // SCENE 1
   {
     id: 1,
-    text: `<p class="txt animate__animated animate__fadeIn">Você acorda no chão imundo de uma das cabines no banheiro do <span class="var">Mondrian's</span>, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são o vômito nas suas calças, uma dor de cabeça infernal e um frasco cheio até a metade com um <span class="var">Líquido Roxo</span> que parece remédio para dor de barriga no seu bolso esquerdo.<span class="cursor-blink">|</span></p>`,
-    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
+    text: `<p class="txt animate__animated animate__fadeIn">Você acorda no banheiro imundo do <span class="var">Mondrian's</span>, um bar de fim de noite no Limiar da Galáxia. Os únicos resquícios da noite passada são uma dor de cabeça infernal e um frasco com um <span class="var">Líquido Roxo</span> que parece remédio para dor de barriga ao lado do que parece ser seu vômito.<span class="cursor-blink">|</span></p>`,
+    img: '<img class="img" src="./img/cena-01.gif" alt="copyright Daniel Hogrefe" />',
     options: [
       {
         text: '<strong>Sair</strong> do banheiro',
         nextText: 3,
       },
       {
-        text: 'Investigar as <strong>outras cabines</strong>',
+        text: 'Investigar o <strong>banheiro</strong>',
         nextText: 2,
       },
     ],
