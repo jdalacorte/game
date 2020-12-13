@@ -1,4 +1,4 @@
-const gameName = 'K*SMV5 2126';
+const gameName = 'Space Muamba';
 
 const imageElement = document.getElementById('img');
 const textElement = document.getElementById('text');
