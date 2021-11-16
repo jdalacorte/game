@@ -76,10 +76,10 @@ const textNodes = [
     <p>Daniel Hogrefe & Jonas Dalacorte</p>
     <h4 class="credits-title">Arte Original</h4>
     <p><a class="links" href="https://danielhogrefe.tumblr.com/" target="_blank">Daniel Hogrefe</a></p>
-    <h4 class="credits-title">Programação & Design</h4>
-    <p><a class="links" href="https://github.com/dpsmkr/" target="_blank">Jonas Dalacorte</a></p>
+    <h4 class="credits-title">Desenvolvimento</h4>
+    <p><a class="links" href="https://github.com/jdalacorte/" target="_blank">Jonas Dalacorte</a></p>
     <h4 class="credits-title">Trilha Original</h4>
-    <p><a class="links" href="#">AKAAO</a></p>
+    <p><a class="links" href="https://akaao.bandcamp.com" target="_blank">AKAAO</a></p>
     <br>
     <h4 class="credits-title">Recursos:</h4>
     <p class="line"><a class="links" href="https://github.com/WebDevSimplified" target="_blank">Web Dev Simplified</a></p>
