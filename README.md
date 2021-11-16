@@ -13,7 +13,7 @@ A mecânica do jogo foi inspirada no código de [WebDevSimplified](https://githu
 
 ---
 
-# Space Muamba - Fear & Frenzy at the Edge of the Galaxy
+## Space Muamba - Fear & Frenzy at the Edge of the Galaxy
 
 ### EN
 Small interactive adventure based on old solo gamebooks.
