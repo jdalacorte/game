@@ -1,5 +1,5 @@
 # Space Muamba
-### Medo e Delírio no Limiar da Galáxia
+## Medo e Delírio no Limiar da Galáxia
 
 Pequena aventura interativa onde baseada nos antigos livros-jogos de aventuras-solo.
 
