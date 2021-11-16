@@ -1,9 +1,12 @@
-# Space Muamba 3020
+# Space Muamba
+### Medo e Delírio no Limiar da Galáxia
 
-### Fear and Frenzy at The Edge of the Galaxy
+Pequena aventura interativa onde baseada nos antigos livros-jogos de aventuras-solo.
 
-This is a simple interactive story game about a _Space Rambler_ who wakes up in a dirty bathroom floor at a bar somewhere in the Galaxy with a strange Substance in his/her possession.
+Criado como estudo para HTML, CSS e JavaScript. O código não foi revisado e contém inúmeros _bugs_.
 
-This game was made in collaboration with [Daniel Hogrefe](https://danielhogrefe.tumblr.com/).
+Ainda assim é possível jogar [AQUI](https://jdalacorte.github.io/game/)
 
-The engine of the game was based on [WebDevSimplified](https://github.com/WebDevSimplified)'s code.
+O jogo foi criado em colaboração com [Daniel Hogrefe](https://danielhogrefe.tumblr.com/), que também fez as ilustrações do mesmo.
+
+A mecânica do jogo foi inspirada no código de [WebDevSimplified](https://github.com/WebDevSimplified).
