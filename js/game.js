@@ -1,8 +1,8 @@
-const gameName = 'Space Muamba';
+const gameName = "Space Muamba";
 
-const imageElement = document.getElementById('img');
-const textElement = document.getElementById('text');
-const optionButtonsElement = document.getElementById('option-buttons');
+// const imageElement = document.getElementById("img");
+const textElement = document.getElementById("text");
+const optionButtonsElement = document.getElementById("option-buttons");
 
 let state = {};
 
@@ -14,24 +14,16 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerHTML = textNode.text;
-  imageElement.innerHTML = textNode.img;
-  if (textNodeIndex === 22) {
-    textElement.style.visibility = "hidden";
-    imageElement.style.visibility = "hidden";
-    document.body.style.backgroundImage = "url('./img/bg-2.jpg')";
-  } else {
-    textElement.style.visibility = "visible";
-    imageElement.style.visibility = "visible"
-  }
+  // imageElement.innerHTML = textNode.img;
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
   textNode.options.forEach((option) => {
     if (showOption(option)) {
-      const button = document.createElement('button');
+      const button = document.createElement("button");
       button.innerHTML = option.text;
-      button.classList.add('btn');
-      button.addEventListener('click', () => selectOption(option));
+      button.classList.add("btn");
+      button.addEventListener("click", () => selectOption(option));
       optionButtonsElement.appendChild(button);
     }
   });
@@ -54,22 +46,20 @@ const textNodes = [
   // HOME
   {
     id: 0,
-    text:
-      `<div class="title">
+    text: `<div class="title">
       <h1 class="main-title anim-txt">${gameName}</h1>
       <h3 class="subtitle">Medo e delírio no Limiar da Galáxia</h3>
       <br>
-      <p class="line animate__animated animate__slideInUp animate__faster">Criado por Daniel Hogrefe & Jonas Dalacorte</p>
+      <p class="line animate__animated animate__slideInUp animate__faster">Criado por Jonas Dalacorte & Daniel Hogrefe</p>
     </div>`,
-    img:
-      '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
+    img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Jogar ✨</strong>',
+        text: "<strong>Jogar ✨</strong>",
         nextText: 1,
       },
       {
-        text: 'Créditos 👁‍🗨',
+        text: "Créditos 👁‍🗨",
         nextText: 24,
       },
     ],
@@ -78,8 +68,7 @@ const textNodes = [
   // CREDITS
   {
     id: 24,
-    text:
-      `<div class="title">
+    text: `<div class="title">
       <h1 class="credits-title animate__animated animate__lightSpeedInRight animate__fast">${gameName}</h1>
     </div>
   <div class="credits">
@@ -94,14 +83,13 @@ const textNodes = [
     <br>
     <h4 class="credits-title">Recursos:</h4>
     <p class="line"><a class="links" href="https://github.com/WebDevSimplified" target="_blank">Web Dev Simplified</a></p>
-    <p class="line"><a class="links" href="https://animate.style/" target="_blank">Animate.css</a></p>
     <p class="line"><a class="links" href="https://puredata.info/" target="_blank">Pure Data</a></p>
     <p class="line"><a class="links" href="https://automatonism.com/" target="_blank">Automatonism</a></p>
   </div >`,
-    img: '',
+    img: "",
     options: [
       {
-        text: 'Voltar',
+        text: "Voltar",
         nextText: 0,
       },
     ],
@@ -114,11 +102,11 @@ const textNodes = [
     img: '<img class="img" src="./img/cena-01.gif" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Sair</strong> do banheiro',
+        text: "<strong>Sair</strong> do banheiro",
         nextText: 3,
       },
       {
-        text: 'Investigar o <strong>banheiro</strong>',
+        text: "Investigar o <strong>banheiro</strong>",
         nextText: 2,
       },
     ],
@@ -131,12 +119,12 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Sair</strong> do banheiro',
+        text: "<strong>Sair</strong> do banheiro",
         setState: { clue1: true },
         nextText: 3,
       },
       {
-        text: 'Experimentar o <strong>Líquido Roxo</strong>',
+        text: "Experimentar o <strong>Líquido Roxo</strong>",
         nextText: 21,
       },
     ],
@@ -149,16 +137,16 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Perguntar sobre a <strong>noite passada</strong>',
+        text: "Perguntar sobre a <strong>noite passada</strong>",
         nextText: 6,
       },
       {
-        text: 'Perguntar o que ele sabe sobre A Substância <strong>K*SMV5</strong>',
+        text: "Perguntar o que ele sabe sobre A Substância <strong>K*SMV5</strong>",
         nextText: 4,
         requiredState: (currentState) => currentState.clue1,
       },
       {
-        text: '<strong>Sair</strong> do bar',
+        text: "<strong>Sair</strong> do bar",
         nextText: 7,
       },
     ],
@@ -171,7 +159,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>>>></strong>',
+        text: "<strong>>>></strong>",
         nextText: 5,
       },
     ],
@@ -188,11 +176,11 @@ const textNodes = [
         nextText: 7,
       },
       {
-        text: 'Entregar <strong>A Substância</strong> ao Velho Kroptiliano',
+        text: "Entregar <strong>A Substância</strong> ao Velho Kroptiliano",
         nextText: 22,
       },
       {
-        text: 'Perguntar sobre a <strong>Dra. Y.Suzuki</strong>',
+        text: "Perguntar sobre a <strong>Dra. Y.Suzuki</strong>",
         nextText: 6,
       },
     ],
@@ -205,7 +193,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>>>></strong>',
+        text: "<strong>>>></strong>",
         nextText: 7,
       },
     ],
@@ -218,18 +206,16 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Procurar algo para <strong>quebrar o bio-vidro</strong> da Turbo 4-BK20',
+        text: "Procurar algo para <strong>quebrar o bio-vidro</strong> da Turbo 4-BK20",
         setState: { spaceShip: true },
         nextText: 8,
       },
       {
-        text:
-          '<strong>"Que diabos de dia"</strong>, experimentar A Substância',
+        text: '<strong>"Que diabos de dia"</strong>, experimentar A Substância',
         nextText: 21,
       },
       {
-        text:
-          'Chamar um <strong>Táxi Espacial</strong> e curar a ressaca em casa',
+        text: "Chamar um <strong>Táxi Espacial</strong> e curar a ressaca em casa",
         setState: { taxi: true },
         nextText: 10,
       },
@@ -244,13 +230,12 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Checar</strong> a mensagem',
+        text: "<strong>Checar</strong> a mensagem",
         setState: { readMessage: true },
         nextText: 9,
       },
       {
-        text:
-          '<strong>Ignorar</strong> a mensagem e ir direto para casa',
+        text: "<strong>Ignorar</strong> a mensagem e ir direto para casa",
         setState: { taxi: true },
         nextText: 10,
       },
@@ -265,8 +250,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text:
-          '<strong>Ignorar</strong> as instruções e ir para casa curar a ressaca',
+        text: "<strong>Ignorar</strong> as instruções e ir para casa curar a ressaca",
         nextText: 10,
         requiredState: (currentState) => currentState.readMessage,
       },
@@ -284,21 +268,20 @@ const textNodes = [
   // SCENE 10 (casa)
   {
     id: 10,
-    text:
-      `<p class="txt animate__animated animate__fadeIn">Ao chegar no seu cubículo flutuante você se depara com a <span class="var">porta pulverizada e seus objetos espalhados por todos os lados</span>. Alguém ou algo está na sua cola e você não faz ideia do que está acontecendo.<span class="cursor-blink">|</strong></p>`,
+    text: `<p class="txt animate__animated animate__fadeIn">Ao chegar no seu cubículo flutuante você se depara com a <span class="var">porta pulverizada e seus objetos espalhados por todos os lados</span>. Alguém ou algo está na sua cola e você não faz ideia do que está acontecendo.<span class="cursor-blink">|</strong></p>`,
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Seguir as instruções da Dra. e saltar para <strong>Kluster-89</strong>',
+        text: "Seguir as instruções da Dra. e saltar para <strong>Kluster-89</strong>",
         requiredState: (currentState) => currentState.readMessage,
         nextText: 12,
       },
       {
-        text: 'Experimentar a maldita <strong>Substância</strong>',
+        text: "Experimentar a maldita <strong>Substância</strong>",
         nextText: 21,
       },
       {
-        text: 'Checar sua <strong>caixa de mensagens</strong>',
+        text: "Checar sua <strong>caixa de mensagens</strong>",
         requiredState: (currentState) => currentState.taxi,
         setState: { readMessage: false },
         nextText: 9,
@@ -313,13 +296,13 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Saltar para <strong>Kluster-89</strong>',
+        text: "Saltar para <strong>Kluster-89</strong>",
         nextText: 12,
       },
       {
-        text: '<strong>Misturar</strong> A Substância com seu fumo Kroptiliano',
+        text: "<strong>Misturar</strong> A Substância com seu fumo Kroptiliano",
         nextText: 22,
-      }
+      },
     ],
   },
 
@@ -330,7 +313,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>>>></strong>',
+        text: "<strong>>>></strong>",
         nextText: 13,
       },
     ],
@@ -343,16 +326,16 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Investigar o <strong>Bar</strong>',
+        text: "Investigar o <strong>Bar</strong>",
         nextText: 15,
       },
       {
-        text: 'Investigar a <strong>Névoa</strong>',
+        text: "Investigar a <strong>Névoa</strong>",
         setState: { bar2: true },
         nextText: 16,
       },
       {
-        text: 'Acender um bom e velho <strong>cigarro Kroptiliano</strong> para curar o enjôo',
+        text: "Acender um bom e velho <strong>cigarro Kroptiliano</strong> para curar o enjôo",
         nextText: 14,
       },
     ],
@@ -365,11 +348,11 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Investigar o <strong>Bar</strong>',
+        text: "Investigar o <strong>Bar</strong>",
         nextText: 15,
       },
       {
-        text: 'Investigar a <strong>Névoa</strong>',
+        text: "Investigar a <strong>Névoa</strong>",
         setState: { bar2: true },
         nextText: 16,
       },
@@ -383,16 +366,15 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Perguntar ao Barman sobre a <strong>Névoa Roxa</strong>',
+        text: "Perguntar ao Barman sobre a <strong>Névoa Roxa</strong>",
         nextText: 17,
       },
       {
-        text: 'Pedir uma dose da <strong>Bebida</strong>',
+        text: "Pedir uma dose da <strong>Bebida</strong>",
         nextText: 21,
       },
       {
-        text:
-          '<strong>"Dane-se esse lugar"</strong>, seguir em direção à Névoa',
+        text: '<strong>"Dane-se esse lugar"</strong>, seguir em direção à Névoa',
         setState: { bar2: true },
         nextText: 16,
       },
@@ -402,24 +384,20 @@ const textNodes = [
   // SCENE 16
   {
     id: 16,
-    text:
-      '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa parte mais elevada perto do centro da praça. Adiante, de um buraco na terra, um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua movimentação é imperceptível.<span class="cursor-blink">|</strong></p>',
+    text: '<p class="txt animate__animated animate__fadeIn">Se embrenhando por entre os galhos que parecem tentáculos de centenas de anos você consegue chegar numa parte mais elevada perto do centro da praça. Adiante, de um buraco na terra, um vapor denso e Roxo é expelido como em um geiser. Uma <span class="var">Figura Enigmática</span> pode ser vista através do vapor. Aparentemente sua movimentação é imperceptível.<span class="cursor-blink">|</strong></p>',
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text:
-          'Esconder-se e <strong>observar</strong> a Figura Enigmática secretamente',
+        text: "Esconder-se e <strong>observar</strong> a Figura Enigmática secretamente",
         nextText: 18,
       },
       {
-        text:
-          '<strong>Voltar ao Bar</strong> e tentar conseguir mais informações sobre o local',
+        text: "<strong>Voltar ao Bar</strong> e tentar conseguir mais informações sobre o local",
         requiredState: (currentState) => currentState.bar2,
         nextText: 17,
       },
       {
-        text:
-          '<strong>Atacar</strong> a Figura Enigmática aproveitando-se do fator surpresa',
+        text: "<strong>Atacar</strong> a Figura Enigmática aproveitando-se do fator surpresa",
         nextText: 19,
       },
     ],
@@ -432,12 +410,12 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Investigar a <strong>Névoa</strong>',
+        text: "Investigar a <strong>Névoa</strong>",
         setState: { bar2: false },
         nextText: 16,
       },
       {
-        text: 'Pedir uma dose da <strong>Bebida</strong> mesmo assim',
+        text: "Pedir uma dose da <strong>Bebida</strong> mesmo assim",
         nextText: 22,
       },
     ],
@@ -450,7 +428,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>>>></strong>',
+        text: "<strong>>>></strong>",
         nextText: 19,
       },
     ],
@@ -463,11 +441,11 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>Aceitar</strong> a dose',
+        text: "<strong>Aceitar</strong> a dose",
         nextText: 20,
       },
       {
-        text: '<strong>Recusar</strong> a dose',
+        text: "<strong>Recusar</strong> a dose",
         nextText: 22,
       },
     ],
@@ -480,7 +458,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>💊 FIM 💊</strong>',
+        text: "<strong>💊 FIM 💊</strong>",
         nextText: 23,
       },
     ],
@@ -493,7 +471,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: '<strong>🌟 Recomeçar 🌟</strong>',
+        text: "<strong>🌟 Recomeçar 🌟</strong>",
         nextText: 1,
       },
     ],
@@ -511,7 +489,7 @@ const textNodes = [
     img: '<img class="img" src="./img/ph.jpg" alt="copyright Daniel Hogrefe" />',
     options: [
       {
-        text: 'Voltar 👾',
+        text: "Voltar 👾",
         nextText: -1,
       },
     ],

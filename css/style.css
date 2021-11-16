@@ -8,7 +8,7 @@
 }
 
 html {
-  font-family: 'Space Mono', monospace;
+  font-family: monospace;
   font-size: 16px;
 }
 
@@ -36,17 +36,21 @@ body {
 }
 
 /* holder */
-.container {
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   align-items: center;
-  width: 900px;
-  max-width: 80%;
+  width: 720px;
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .img {
-  background: #eee;
+  display: none;
+  /* background: #eee;
   margin: auto;
   max-width: 768px;
   width: 100%;
@@ -55,7 +59,7 @@ body {
   border: 10px solid transparent;
   border-radius: 3px;
   box-shadow: 3px 3px 0 #111;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 .text {
@@ -90,7 +94,7 @@ body {
   line-height: 0.65;
   margin: 0.1em 0.2em 0.2em 0;
   text-indent: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .fim-txt {
@@ -215,7 +219,7 @@ body {
   margin: 3px 5px;
   transition: all 0.2s ease-in-out;
   box-shadow: 3px 3px 0 #111;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .btn:hover {
@@ -234,14 +238,13 @@ body {
 .credits {
   padding: 10px;
   text-align: center;
-  line-height: 2;
 }
 
 .credits-title {
   color: crimson;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-top: 1.5rem;
+  margin-top: 15px;
 }
 
 /* footer */
@@ -288,12 +291,12 @@ body {
     left: 0;
   }
 
-  .container {
+  #container {
     margin: 0 auto 70px;
     padding: 10px;
   }
 
-  .container,
+  #container,
   .img {
     max-width: 100%;
   }
